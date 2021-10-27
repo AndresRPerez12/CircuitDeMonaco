@@ -8,18 +8,6 @@ body { /* estilos generales para el cuerpo de la página */
     color: #131212;
 }
 
-a:link {
-    color: #ebebeb;
-	text-decoration:none; /* para que no subraye los vínculos */  
-}
-a:visited {
-    color: #ebebeb;
-	text-decoration:none; /* para que no subraye los vínculos */  
-}
-a:hover {    /* estilo cuando el cursor está sobre el link */ 
-	color: #fc4545;
-}
-
 /******************************* CONTENEDORES **********************/
 
 .top_container{ /* estilos del contenedor superior que se mantiene en todas las páginas */ 
@@ -111,6 +99,18 @@ a.boton-menu:visited {  /* estilos para los botones principales del menú cuando
 
 /******************************* ESTILOS GENERALES **********************/
 
+a:link {
+    color: #ebebeb;
+	text-decoration:none; /* para que no subraye los vínculos */  
+}
+a:visited {
+    color: #ebebeb;
+	text-decoration:none; /* para que no subraye los vínculos */  
+}
+a:hover {    /* estilo cuando el cursor está sobre el link */ 
+	color: #fc4545;
+}
+
 .table-image{   /* estilos para las imágenes que van dentro de tablas */
     width: 90%;
 }
@@ -124,6 +124,24 @@ a.boton-menu:visited {  /* estilos para los botones principales del menú cuando
 .table-list{    /* estilos para las listas que van dentro de tablas */
     text-align: left;
     font-size: 5mm;
+}
+
+.text-link{      /* estilos de los links insertados en el texto */ 
+    color:#a50202;
+}
+
+.text-link:hover{    /* estilos de los links insertados en el texto cuando pasa el cursor por encima */ 
+    color:#ffffff;
+    background-color: #a50202;
+}
+
+.text-link:visited { /* estilos de los links insertados en el texto cuando ya fueron visitados */ 
+    color: #a50202;
+}
+
+.text-link:visited:hover{ /* estilos de los links insertados en el texto cuando ya fueron visitados y pasa el cursor por encima */ 
+    color:#f2f4f6;
+    background-color: #a50202;
 }
 
 /******************************* UBICACIÓN **********************/
