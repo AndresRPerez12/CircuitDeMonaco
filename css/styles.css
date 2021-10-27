@@ -1,0 +1,193 @@
+@charset "UTF-8";
+
+body { /* estilos generales para el cuerpo de la página */   
+    margin: 0;
+    text-align: center;
+    font-family: 'Roboto','Arial';
+    background-color: #f2f4f6;
+    color: #131212;
+}
+
+a:link {
+    color: #ebebeb;
+	text-decoration:none; /* para que no subraye los vínculos */  
+}
+a:visited {
+    color: #ebebeb;
+	text-decoration:none; /* para que no subraye los vínculos */  
+}
+a:hover {    /* estilo cuando el cursor está sobre el link */ 
+	color: #fc4545;
+}
+
+/******************************* CONTENEDORES **********************/
+
+.top_container{ /* estilos del contenedor superior que se mantiene en todas las páginas */ 
+    background-image: url(../images/tunnel.png);    /* fijar imagen de fondo desde un archivo */ 
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position: center 55%;    /* escoger que parte de la imagen se muestra  */ 
+    position: relative;                 /* posición relativa a su posición estática usual  */ 
+    padding-top: 10px;
+    padding-bottom: 200px;  
+}
+
+.main_container { /* estilos para el contenedor central que varía en cada página */
+    padding: 10px 100px 20px;
+    margin: 0;
+}
+
+.bottom_container { /* estilos del contenedor inferior que se mantiene en todas las páginas */ 
+    background-color: #a50202;
+    color: #ffffff;
+    padding: 20px 0;
+    margin: 0;
+}
+
+/******************************* TITULOS **********************/
+
+.title{     /* estilos del título principal */ 
+    font-family: 'Titillium Web', 'Arial', sans-serif;
+    font-style: italic;
+    font-size: 20mm;
+    background-color: rgba(0, 0, 0, 0.5);   /* fijar el color de fondo del título incluyendo su opacidad */ 
+    margin-left: 25%;
+    margin-right: 25%;                      /* márgenes para que no llegue hasta los bordes laterales */ 
+}
+
+.subtitle{  /* estilos del subtítulo principal */ 
+    font-size: 10mm;
+    background-color: rgb(255, 255, 255, 0.6);  /* fijar el color de fondo del título incluyendo su opacidad */
+    margin-left: 30%;
+    margin-right: 30%;      /* márgenes para que no llegue hasta los bordes laterales */ 
+    color: #a50202;
+}
+
+.subpage-title{ /* estilos para el título de cada página individual en el contenedor principal */ 
+    color: #a50202;
+    font-size: 10mm;
+}
+
+/******************************* BOTONES **********************/
+
+a.boton-menu:visited {  /* estilos para los botones principales del menú cuando el link ya ha sido visitado */ 
+    color: #ffffff;
+	text-decoration:none; /* para que no subraye los vínculos */  
+}
+
+.boton-menu {           /* estilos para los botones del menú, generados en https://www.bestcssbuttongenerator.com/ */
+	box-shadow: 3px 4px 0px 0px #8a2a21;
+	background:linear-gradient(to bottom, #a50202 5%, #f24437 100%);
+	background-color:#a50202;
+	border-radius:18px;
+	border:1px solid #d02718;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:17px;
+	padding:7px 25px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #810e05;
+}
+.boton-menu:hover {     /* estilos para los botones del menú, generados en https://www.bestcssbuttongenerator.com/ */
+	background:linear-gradient(to bottom, #f24437 5%, #a50202 100%);
+	background-color:#f24437;
+    color: #ffffff;
+}
+.boton-menu:active {    /* estilos para los botones del menú, generados en https://www.bestcssbuttongenerator.com/ */
+	position:relative;
+	top:1px;
+}
+
+/******************************* ELEMENTOS CONTENEDOR INFERIOR **********************/
+
+.mail-link{         /* estilos del emoji utilizado como botón de correo */ 
+    font-size: 10mm;
+}
+
+.mail-link:hover{   /* estilos del emoji utilizado como botón de correo cuando pasa el cursor por encima */ 
+    opacity: 0.5;
+}
+
+/******************************* ESTILOS GENERALES **********************/
+
+.table-image{   /* estilos para las imágenes que van dentro de tablas */
+    width: 90%;
+}
+
+.table-text{    /* estilos para el texto que va dentro de tablas */
+    text-align: left;
+    font-size: 6mm;
+    padding: 20px;
+}
+
+.table-list{    /* estilos para las listas que van dentro de tablas */
+    text-align: left;
+    font-size: 5mm;
+}
+
+/******************************* UBICACIÓN **********************/
+
+.flag-image{    /* estilos para la imagen de la bandera de Mónaco */
+    width: 40%;
+}
+
+.track-image{   /* estilos para la imagen con el diagrama del circuito */
+    width: 90%;
+    padding: 0;
+    margin: 0;
+}
+
+.body-image{        /* estilos para las imágenes en el cuerpo de la página */
+    width: 60%;
+}
+
+/******************************* HABITANTES **********************/
+
+.resident-image{    /* estilos para las imágenes de los residentes notables */
+    width: 35%;
+    padding: 10px;
+}
+
+.resident-text{     /* estilos para el texto sobre los residentes notables */
+    font-size: 6mm;
+    font-weight: bold;
+}
+
+/******************************* HISTORIA **********************/
+
+.winner-image{      /* estilos para las imágenes de los ganadores en Mónaco */
+    width: 50%;
+    padding: 10px;
+}
+
+.winner-text{       /* estilos para el texto sobre los ganadores en Mónaco */
+    font-size: 6mm;
+    font-weight: bold;
+    padding: 10px;
+}
+
+/******************************* CRÉDITOS **********************/
+
+.credits-list{      /* estilos de la lista que contiene los créditos */ 
+    text-align: left;
+}
+
+.credits-link{      /* estilos de los créditos que llevan a sus páginas de origen */ 
+    color:#131212;
+}
+
+.credits-link:hover{    /* estilos de los créditos que llevan a sus páginas de origen cuando pasa el cursor por encima */ 
+    color:#ffffff;
+    background-color: #a50202;
+}
+
+.credits-link:visited { /* estilos de los créditos que llevan a sus páginas de origen cuando ya fueron visitados */ 
+    color: #131212;
+}
+
+.credits-link:visited:hover{ /* estilos de los créditos que llevan a sus páginas de origen cuando ya fueron visitados y pasa el cursor por encima */ 
+    color:#f2f4f6;
+    background-color: #a50202;
+}
+
