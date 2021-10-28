@@ -43,6 +43,16 @@ body { /* estilos generales para el cuerpo de la página */
     margin-right: 25%;                      /* márgenes para que no llegue hasta los bordes laterales */ 
 }
 
+a.title-link {
+    color: #ebebeb;
+}
+a.title-link:visited {
+    color: #ebebeb;
+}
+a.title-link:hover {    /* estilo cuando el cursor está sobre el link */ 
+	color: #fc4545;
+}
+
 .subtitle{  /* estilos del subtítulo principal */ 
     font-size: 10mm;
     background-color: rgb(255, 255, 255, 0.6);  /* fijar el color de fondo del título incluyendo su opacidad */
@@ -60,7 +70,6 @@ body { /* estilos generales para el cuerpo de la página */
 
 a.boton-menu:visited {  /* estilos para los botones principales del menú cuando el link ya ha sido visitado */ 
     color: #ffffff;
-	text-decoration:none; /* para que no subraye los vínculos */  
 }
 
 .boton-menu {           /* estilos para los botones del menú, generados en https://www.bestcssbuttongenerator.com/ */
@@ -99,16 +108,8 @@ a.boton-menu:visited {  /* estilos para los botones principales del menú cuando
 
 /******************************* ESTILOS GENERALES **********************/
 
-a:link {
-    color: #ebebeb;
-	text-decoration:none; /* para que no subraye los vínculos */  
-}
-a:visited {
-    color: #ebebeb;
-	text-decoration:none; /* para que no subraye los vínculos */  
-}
-a:hover {    /* estilo cuando el cursor está sobre el link */ 
-	color: #fc4545;
+a{
+    text-decoration:none; /* para que no subraye los vínculos */ 
 }
 
 .table-image{   /* estilos para las imágenes que van dentro de tablas */
