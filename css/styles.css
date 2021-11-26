@@ -21,7 +21,7 @@ body { /* estilos generales para el cuerpo de la página */
 }
 
 .main_container { /* estilos para el contenedor central que varía en cada página */
-    padding: 10px 100px 20px;
+    padding: 10px 5% 20px;
     margin: 0;
 }
 
@@ -38,35 +38,43 @@ body { /* estilos generales para el cuerpo de la página */
     font-family: 'Titillium Web', 'Arial', sans-serif;
     font-style: italic;
     font-size: 20mm;
+    font-weight: bold;
     background-color: rgba(0, 0, 0, 0.5);   /* fijar el color de fondo del título incluyendo su opacidad */ 
-    margin-left: 25%;
-    margin-right: 25%;                      /* márgenes para que no llegue hasta los bordes laterales */ 
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 a.title-link {
     color: #ebebeb;
+    text-decoration: none;
 }
 a.title-link:visited {
     color: #ebebeb;
+    text-decoration: none;
 }
 a.title-link:hover {    /* estilo cuando el cursor está sobre el link */ 
 	color: #fc4545;
+    text-decoration: none;
 }
 
 .subtitle{  /* estilos del subtítulo principal */ 
     font-size: 10mm;
+    font-weight: bold;
     background-color: rgb(255, 255, 255, 0.6);  /* fijar el color de fondo del título incluyendo su opacidad */
-    margin-left: 30%;
-    margin-right: 30%;      /* márgenes para que no llegue hasta los bordes laterales */ 
     color: #a50202;
+    margin-top: 0;
+    margin-bottom: 20px;
 }
 
 .subpage-title{ /* estilos para el título de cada página individual en el contenedor principal */ 
     color: #a50202;
     font-size: 10mm;
+    margin: 20px 0;
 }
 
-/******************************* BOTONES **********************/
+/******************************* BOTONES Y NAVBAR **********************/
+
+
 
 a.boton-menu:visited {  /* estilos para los botones principales del menú cuando el link ya ha sido visitado */ 
     color: #ffffff;
@@ -85,11 +93,13 @@ a.boton-menu:visited {  /* estilos para los botones principales del menú cuando
 	padding:7px 25px;
 	text-decoration:none;
 	text-shadow:0px 1px 0px #810e05;
+    text-decoration: none;
 }
 .boton-menu:hover {     /* estilos para los botones del menú, generados en https://www.bestcssbuttongenerator.com/ */
 	background:linear-gradient(to bottom, #f24437 5%, #a50202 100%);
 	background-color:#f24437;
     color: #ffffff;
+    text-decoration: none;
 }
 .boton-menu:active {    /* estilos para los botones del menú, generados en https://www.bestcssbuttongenerator.com/ */
 	position:relative;
@@ -112,14 +122,19 @@ a{
     text-decoration:none; /* para que no subraye los vínculos */ 
 }
 
+a:hover{
+    text-decoration:none; /* para que no subraye los vínculos */ 
+}
+
 .table-image{   /* estilos para las imágenes que van dentro de tablas */
-    width: 90%;
+    width: 100%;
+    margin: 20px 0;
 }
 
 .table-text{    /* estilos para el texto que va dentro de tablas */
     text-align: left;
     font-size: 6mm;
-    padding: 20px;
+    padding: 20px 0;
 }
 
 .table-list{    /* estilos para las listas que van dentro de tablas */
@@ -148,13 +163,12 @@ a{
 /******************************* UBICACIÓN **********************/
 
 .flag-image{    /* estilos para la imagen de la bandera de Mónaco */
-    width: 40%;
+    margin: 20px 0;
+    border: 5px groove;
 }
 
 .track-image{   /* estilos para la imagen con el diagrama del circuito */
-    width: 90%;
-    padding: 0;
-    margin: 0;
+    margin: 20px 0;
 }
 
 .body-image{        /* estilos para las imágenes en el cuerpo de la página */
@@ -164,8 +178,8 @@ a{
 /******************************* HABITANTES **********************/
 
 .resident-image{    /* estilos para las imágenes de los residentes notables */
-    width: 35%;
-    padding: 10px;
+    width: 100%;
+    margin: 10px 0;
 }
 
 .resident-text{     /* estilos para el texto sobre los residentes notables */
