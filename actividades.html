@@ -8,57 +8,100 @@
     <meta charset="UTF-8">
     <meta lang="es">
     <title>Le Circuit de Monaco</title>
-    <link rel="stylesheet" href="css/styles.css">   <!-- especificar hoja de estilos -->
     <link rel="icon" href="images/favicon.ico"> <!-- especificar ícono de la barra del navegador -->
     <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- importar una fuente desde Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+    rel="stylesheet">
+    <!-- importar Bootstrap para RWD -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/styles.css"> <!-- especificar hoja de estilos propia al final para mayor jerarquía -->
 </head>
 
 <body>
-    <div class="top_container"> <!-- sección superior que se muestra en todas las páginas -->
-        <h1 class="title"><a href="index.html" target="_self" class="title-link">Le Circuit de Monaco</a></h1> <!-- título principal que lleva al menú -->
-        <h2 class="subtitle">Monte Carlo, Mónaco</h2>
-        <nav>
-            <!-- menu principal de navegación -->
-            <a href="ubicacion.html" target="_self" class="boton-menu">Ubicación</a>
-            <a href="habitantes.html" target="_self" class="boton-menu">Habitantes</a>
-            <a href="actividades.html" target="_self" class="boton-menu">Actividades</a>
-            <a href="historia.html" target="_self" class="boton-menu">Historia</a>
-            <a href="creditos.html" target="_self" class="boton-menu">Créditos</a>
-        </nav>
+    <!-- sección superior que se muestra en todas las páginas - centra el texto de todo el contenedor -->
+    <div class="top_container text-center">
+        <div class="container-fluid">  <!-- contenedor de boostrap que utiliza el 100% del ancho de la pantalla -->
+            <div class="row justify-content-center"> <!-- fila de bootstrap que centra los elementos horizontalmente -->
+                <div class="col-12 col-md-10 col-xl-7"> <!-- columna de bootstrap que se hace mas grande en pantallas mas pequeñas -->
+                    <!-- título principal que lleva al menú -->
+                    <h1 class="title"><a href="index.html" target="_self" class="title-link">Le Circuit de Monaco</a></h1>
+                </div>
+            </div>
+            <div class="row justify-content-center"> <!-- fila de bootstrap que centra los elementos horizontalmente -->
+                <div class="col-11 col-md-8 col-xl-5"> <!-- columna de bootstrap que se hace mas grande en pantallas mas pequeñas -->
+                    <h2 class="subtitle">Monte Carlo, Mónaco</h2>
+                </div>
+            </div>
+        </div>
+        <!-- menu principal de navegación -->
+        <header>
+            <!-- el elemento header incluye el menu desplegable y el ícono que lo despliega -->
+            <input type="checkbox" id="menu-toggle"><!-- checkbox permite la opción boleana -->
+            <label for="menu-toggle"><img src="images/menu-toggle.png" width="30px"></label>
+            <!-- la imagen del ícono se muestra como label del checkbox pero se oculta cuando no se necesita -->
+            <nav class="menu double-menu">
+                <ul>
+                    <!-- los botones son elementos de una lista que define el menu pero mantiene el mismo diseño de cada botón, la posición de esta lista depende del estado del checkbox-->
+                    <li><a href="ubicacion.html" target="_self" class="boton-menu">Ubicación</a></li>
+                    <li><a href="habitantes.html" target="_self" class="boton-menu">Habitantes</a></li>
+                    <li><a href="actividades.html" target="_self" class="boton-menu">Actividades</a></li>
+                    <li><a href="historia.html" target="_self" class="boton-menu">Historia</a></li>
+                    <li><a href="creditos.html" target="_self" class="boton-menu">Créditos</a></li>
+                    <!-- botón que lleva a una sección diferente dentro de la misma página -->
+                    <li class="nav-subsection"><a href="#f1-section" target="_self" class="boton-submenu">Gran Premio de Mónaco</a></li>
+                    <!-- botón que lleva a una sección diferente dentro de la misma página -->
+                    <li class="nav-subsection"><a href="#fe-section" target="_self" class="boton-submenu">ePrix de Mónaco</a></li>
+                </ul>
+            </nav>
+        </header>
     </div>
 
     <div class="main_container"> <!-- sección central que cambia en cada página -->
-        <nav> <!-- menu de navegación interno para esta página específica -->
-            <a href="#f1-section" target="_self" class="boton-menu">Gran Premio de Mónaco - Fórmula 1</a>   <!-- botón que lleva a una sección diferente dentro de la misma página -->
-            <a href="#fe-section" target="_self" class="boton-menu">ePrix de Mónaco - Fórmula e</a>        <!-- botón que lleva a una sección diferente dentro de la misma página -->
-        </nav>
-        <h2 class="subpage-title">Actividades en el circuito</h2> <!-- título de la página específica -->
-        <p>
-            El circuito se monta sobre las calles del principado en dos ocasiones cada año:
-        </p>
-        <h2 class="subpage-subtitle" id="f1-section">Gran Premio de Mónaco - Fórmula 1</h2> <!-- subtítulo de la página específica -->
-        <p>
-            Considerada una de las carreras más prestigiosas del capeonato mundial de Fórmula 1, la carrera
-            se realiza en el més de Mayo de cada año. En los mismos días que la Fórmula 1 corren sus categorías asociadas, como la Fórmula 2.
-            Hace parte de la denominada "Triple Corona del Automovilismo", junto con las 500 millas de Indianápolis y las 24 horas de Le Mans.
-            Solo un píloto ha ganado las 3 competencias: Graham Hill. Dos pilotos en activo tienen dos de las tres carreras ganadas:
-            Juan Pablo Montoya (GP de Mónaco y las 500 millas) y Fernando Alonso (GP de Mónaco y Le Mans).
-        </p>
-        <p>
-            En el podio en el Gran Premio de Mónaco de 2021 estuvieron Max Verstappen, Carlos Sainz Jr y Lando Norris:
-        </p>
-        <img class="body-image" src="images/monacogp.jpg" alt="Podio Monaco GP 2021"> <!-- imagen desde un archivo -->
-        <h2 class="subpage-subtitle" id="fe-section">ePrix de Mónaco - Fórmula e</h2> <!-- subtítulo de la página específica -->
-        <p>
-            Cada dos años, la máxima categoría de monoplazas eléctricos corre en el circuito de Mónaco. Inició en 2015, y se corría en in circuito
-            modificado más corto. Desde 2021 se utiliza una configuración del circuito muy cercana a la utilizada por la Fórmula 1.
-        </p>
-        <p>
-            En el podio en el ePrix de Mónaco de 2021 estuvieron António Félix da Costa, Robin Frijns y Mitch Evans:
-        </p>
-        <img class="body-image" src="images/monacoep.jpg" alt="Podio ePrix de Monaco 2021"> <!-- imagen desde un archivo -->
+        <div class="container-fluid">  <!-- contenedor de boostrap que utiliza el 100% del ancho de la pantalla -->
+            <nav class="inner-nav"> <!-- menu de navegación interno para esta página específica -->
+                <a href="#f1-section" target="_self" class="boton-submenu">Gran Premio de Mónaco - Fórmula 1</a>   <!-- botón que lleva a una sección diferente dentro de la misma página -->
+                <a href="#fe-section" target="_self" class="boton-submenu">ePrix de Mónaco - Fórmula e</a>        <!-- botón que lleva a una sección diferente dentro de la misma página -->
+            </nav>
+            <h2 class="subpage-title">Actividades en el circuito</h2> <!-- título de la página específica -->
+            <p class="body-text">
+                El circuito se monta sobre las calles del principado en dos ocasiones cada año:
+            </p>
+            <h2 class="subpage-subtitle" id="f1-section">Gran Premio de Mónaco - Fórmula 1</h2> <!-- subtítulo de la página específica -->
+            <div class="row justify-content-center"> <!-- fila de bootstrap que centra los elementos horizontalmente -->
+                <div class="col-xl-5 align-self-center"> <!-- columna de bootstrap que se hace más pequeña en desktop y centra verticalmente -->
+                    <p class="table-text">
+                        Considerada una de las carreras más prestigiosas del capeonato mundial de Fórmula 1, la carrera
+                        se realiza en el més de Mayo de cada año. En los mismos días que la Fórmula 1 corren sus categorías asociadas, como la Fórmula 2.
+                        Hace parte de la denominada "Triple Corona del Automovilismo", junto con las 500 millas de Indianápolis y las 24 horas de Le Mans.
+                        Solo un píloto ha ganado las 3 competencias: Graham Hill. Dos pilotos en activo tienen dos de las tres carreras ganadas:
+                        Juan Pablo Montoya (GP de Mónaco y las 500 millas) y Fernando Alonso (GP de Mónaco y Le Mans).
+                    </p>
+                </div>
+                <div class="col-md-10 col-xl-6 align-self-center"> <!-- columna de bootstrap que se hace más pequeña en pantallas más grandes y centra verticalmente -->
+                    <img class="body-image" src="images/monacogp.jpg" alt="Podio Monaco GP 2021"> <!-- imagen desde un archivo -->
+                    <p class="body-text">
+                        En el podio en el Gran Premio de Mónaco de 2021 estuvieron Max Verstappen, Carlos Sainz Jr y Lando Norris:
+                    </p>
+                </div>
+            </div>
+            <h2 class="subpage-subtitle" id="fe-section">ePrix de Mónaco - Fórmula e</h2> <!-- subtítulo de la página específica -->
+            <div class="row justify-content-center"> <!-- fila de bootstrap que centra los elementos horizontalmente -->
+                <div class="col-xl-5 align-self-center"> <!-- columna de bootstrap que se hace más pequeña en desktop y centra verticalmente -->
+                    <p class="table-text">
+                        Cada dos años, la máxima categoría de monoplazas eléctricos corre en el circuito de Mónaco. Inició en 2015, y se corría en in circuito modificado más corto. Desde 2021 se utiliza una configuración del circuito muy cercana a la utilizada por la Fórmula 1.
+                    </p>
+                </div>
+                <div class="col-md-10 col-xl-6 align-self-center"> <!-- columna de bootstrap que se hace más pequeña en pantallas más grandes y centra verticalmente -->
+                    <img class="body-image" src="images/monacoep.jpg" alt="Podio ePrix de Monaco 2021"> <!-- imagen desde un archivo -->
+                    <p class="body-text">
+                        En el podio en el ePrix de Mónaco de 2021 estuvieron António Félix da Costa, Robin Frijns y Mitch Evans:
+                    </p>
+                </div>
+            </div>
+        </div>
     </div>
 
     <div class="bottom_container"> <!-- sección inferior que se muestra en todas las páginas -->

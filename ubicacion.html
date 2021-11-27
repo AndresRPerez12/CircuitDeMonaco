@@ -8,82 +8,122 @@
     <meta charset="UTF-8">
     <meta lang="es">
     <title>Le Circuit de Monaco</title>
-    <link rel="stylesheet" href="css/styles.css">   <!-- especificar hoja de estilos -->
     <link rel="icon" href="images/favicon.ico"> <!-- especificar ícono de la barra del navegador -->
     <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- importar una fuente desde Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+    rel="stylesheet">
+    <!-- importar Bootstrap para RWD -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/styles.css"> <!-- especificar hoja de estilos propia al final para mayor jerarquía -->
 </head>
 
 <body>
-    <div class="top_container"> <!-- sección superior que se muestra en todas las páginas -->
-        <h1 class="title"><a href="index.html" target="_self" class="title-link">Le Circuit de Monaco</a></h1> <!-- título principal que lleva al menú -->
-        <h2 class="subtitle">Monte Carlo, Mónaco</h2>
-        <nav>
-            <!-- menu principal de navegación -->
-            <a href="ubicacion.html" target="_self" class="boton-menu">Ubicación</a>
-            <a href="habitantes.html" target="_self" class="boton-menu">Habitantes</a>
-            <a href="actividades.html" target="_self" class="boton-menu">Actividades</a>
-            <a href="historia.html" target="_self" class="boton-menu">Historia</a>
-            <a href="creditos.html" target="_self" class="boton-menu">Créditos</a>
-        </nav>
+    <!-- sección superior que se muestra en todas las páginas - centra el texto de todo el contenedor -->
+    <div class="top_container text-center">
+        <div class="container-fluid">  <!-- contenedor de boostrap que utiliza el 100% del ancho de la pantalla -->
+            <div class="row justify-content-center"> <!-- fila de bootstrap que centra los elementos horizontalmente -->
+                <div class="col-12 col-md-10 col-xl-7"> <!-- columna de bootstrap que se hace más grande en pantallas más pequeñas -->
+                    <!-- título principal que lleva al menú -->
+                    <h1 class="title"><a href="index.html" target="_self" class="title-link">Le Circuit de Monaco</a></h1>
+                </div>
+            </div>
+            <div class="row justify-content-center"> <!-- fila de bootstrap que centra los elementos horizontalmente -->
+                <div class="col-11 col-md-8 col-xl-5"> <!-- columna de bootstrap que se hace mas grande en pantallas mas pequeñas -->
+                    <h2 class="subtitle">Monte Carlo, Mónaco</h2>
+                </div>
+            </div>
+        </div>
+        <!-- menu principal de navegación -->
+        <header>
+            <!-- el elemento header incluye el menu desplegable y el ícono que lo despliega -->
+            <input type="checkbox" id="menu-toggle"><!-- checkbox permite la opción boleana -->
+            <label for="menu-toggle"><img src="images/menu-toggle.png" width="30px"></label>
+            <!-- la imagen del ícono se muestra como label del checkbox pero se oculta cuando no se necesita -->
+            <nav class="menu double-menu">
+                <ul>
+                    <!-- los botones son elementos de una lista que define el menu pero mantiene el mismo diseño de cada botón, la posición de esta lista depende del estado del checkbox-->
+                    <li><a href="ubicacion.html" target="_self" class="boton-menu">Ubicación</a></li>
+                    <li><a href="habitantes.html" target="_self" class="boton-menu">Habitantes</a></li>
+                    <li><a href="actividades.html" target="_self" class="boton-menu">Actividades</a></li>
+                    <li><a href="historia.html" target="_self" class="boton-menu">Historia</a></li>
+                    <li><a href="creditos.html" target="_self" class="boton-menu">Créditos</a></li>
+                    <!-- botón que lleva a una sección diferente dentro de la misma página -->
+                    <li class="nav-subsection"><a href="#ubicacion-section" target="_self" class="boton-submenu">Ubicación del circuito</a></li>
+                    <!-- botón que lleva a una sección diferente dentro de la misma página -->
+                    <li class="nav-subsection"><a href="#track-section" target="_self" class="boton-submenu">¿Cómo es el circuito?</a></li>
+                </ul>
+            </nav>
+        </header>
     </div>
-    
-    <div class="main_container">    <!-- sección central que cambia en cada página -->
-        <nav> <!-- menu de navegación interno para esta página específica -->
-            <a href="#ubicacion-section" target="_self" class="boton-menu">Ubicación del circuito</a>   <!-- botón que lleva a una sección diferente dentro de la misma página -->
-            <a href="#track-section" target="_self" class="boton-menu">¿Cómo es el circuito?</a>        <!-- botón que lleva a una sección diferente dentro de la misma página -->
-        </nav>
-        <h2 class="subpage-title" id="ubicacion-section">Ubicación del circuito</h2> <!-- título de la página específica -->
-        <table>         <!-- tabla con dos columnas para poner imagenes junto a texto -->
-            <tr>
-                <td>
-                    <img class="table-image" src="images/location.jpg" alt="ubicacion de monaco">   <!-- imagen desde un archivo -->
-                </td>
-                <td>
+
+    <div class="main_container"> <!-- sección central que cambia en cada página -->
+        <div class="container-fluid">  <!-- contenedor de boostrap que utiliza el 100% del ancho de la pantalla -->
+            <nav class="inner-nav">
+                <!-- menu de navegación interno para esta página específica -->
+                <a href="#ubicacion-section" target="_self" class="boton-submenu">Ubicación del circuito</a>
+                <!-- botón que lleva a una sección diferente dentro de la misma página -->
+                <a href="#track-section" target="_self" class="boton-submenu">¿Cómo es el circuito?</a>
+                <!-- botón que lleva a una sección diferente dentro de la misma página -->
+            </nav>
+            <h2 class="subpage-title" id="ubicacion-section">Ubicación del circuito</h2> <!-- título de la página específica -->
+            <div class="row justify-content-around"> <!-- fila de bootstrap que distribuye los elementos -->
+                <div class="col-xl-5"> <!-- columna de bootstrap que se hace mas pequeña en desktop -->
+                    <img class="table-image" src="images/location.jpg" alt="ubicacion de monaco"> <!-- imagen desde un archivo -->
+                </div>
+                <div class="col-xl-5 align-self-center"> <!-- columna de bootstrap que se hace mas pequeña en desktop y centra verticalmente -->
                     <p class="table-text">
                         El circuito de Mónaco se encuentra en el Principado de Mónaco, un muy pequeño país al sur de
                         Francia sobre el mediterraneo. Al circuito también se le conoce como Monte Carlo dado que gran
                         parte del mismo está dentro del barrio que lleva este nombre.
                     </p>
-                </td>
-            </tr>
-            <tr>
-                <td>
+                </div>
+            </div>
+            <div class="row justify-content-around"> <!-- fila de bootstrap que distribuye los elementos -->
+                <div class="col-xl-5 col-md-6 align-self-center"> <!-- columna de bootstrap que se hace mas pequeña en desktop y tablet, y centra verticalmente -->
                     <p class="table-text">
-                        <a href="https://www.britannica.com/place/Monaco" target="_blank" class="text-link">Mónaco</a> es una ciudad estado de apenas 38,400 habitantes. Queda a 15 kilómetros de la ciudad francesa
-                        Niza y a 8 km de la frontera con Italia. Además de las carreras, la ciudad es famosa por sus playas,
-                        infraestructura náutica y el Place du Casino en Monte Carlo.
+                        <a href="https://www.britannica.com/place/Monaco" target="_blank" class="text-link">Mónaco</a>
+                        es una ciudad estado de apenas 38,400 habitantes. Queda a 15 kilómetros de la ciudad francesa
+                        Niza y a 8 km de la frontera con Italia. Además de las carreras, la ciudad es famosa por sus
+                        playas, infraestructura náutica y el Place du Casino en Monte Carlo.
                     </p>
-                </td>
-                <td>
-                    <img class="flag-image" src="images/flag.svg" alt="bandera de monaco"> <!-- imagen desde un archivo -->
-                </td>
-            </tr>
-        </table>
-        <h2 class="subpage-title" id="track-section">¿Cómo es el circuito?</h2> <!-- título de la página específica -->
-        <table>
-            <tr>
-                <td>
-                    <img class="table-image" src="images/harbor.jpg" alt="Bahia de Monaco"> <!-- imagen desde un archivo -->
-                </td>
-                <td>
+                </div>
+                <div class="col-xl-3 col-md-5 col-9 align-self-center"> <!-- columna de bootstrap que se hace más grande en pantallas más pequeñas -->
+                    <img class="table-image flag-image" src="images/flag.svg" alt="bandera de monaco"> <!-- imagen desde un archivo -->
+                </div>
+            </div>
+            <h2 class="subpage-title" id="track-section">¿Cómo es el circuito?</h2>
+            <!-- título de la página específica -->
+            <div class="row justify-content-around"> <!-- fila de bootstrap que distribuye los elementos -->
+                <div class="col-xl-6 align-self-center"> <!-- columna de bootstrap que se hace mas pequeña en desktop y centra verticalmente -->
+                    <img class="table-image" src="images/harbor.jpg" alt="Bahia de Monaco">  <!-- imagen desde un archivo -->
+                </div>
+                <div class="col-xl-5 align-self-center"> <!-- columna de bootstrap que se hace mas pequeña en desktop y centra verticalmente -->
                     <p class="table-text">
-                        Para la <a href="https://www.formula1.com/en/racing/2021/Monaco/Circuit.html" target="_blank" class="text-link">Fórmula 1</a>, el circuito
-                        es de 3.337 kilómetros. Es un circuito callejero, lo que significa que los pilotos corren sobre lo que usualmente son
-                        calles comunes de la ciudad. Durante el fin de semana de la carrera, se cierran las vías necesarias para acomodar el
-                        circuito, los pits, y las gradas para los aficionados. El circuito es muy estrecho y no tiene lugares amplios para
-                        adelantar, especialmente con los vehículos de Fórmula 1 actuales que son los más anchos de la historia. Pasa por la
+                        Para la <a href="https://www.formula1.com/en/racing/2021/Monaco/Circuit.html"
+                            target="_blank" class="text-link">Fórmula 1</a>, el circuito
+                        es de 3.337 kilómetros. Es un circuito callejero, lo que significa que los pilotos corren
+                        sobre lo que usualmente son
+                        calles comunes de la ciudad. Durante el fin de semana de la carrera, se cierran las vías
+                        necesarias para acomodar el
+                        circuito, los pits, y las gradas para los aficionados. El circuito es muy estrecho y no
+                        tiene lugares amplios para
+                        adelantar, especialmente con los vehículos de Fórmula 1 actuales que son los más anchos de
+                        la historia. Pasa por la
                         bahía en el mar mediterraneo y por el icónico túnel.
                     </p>
-                </td>
-            </tr>
-            <tr>
-                <td>
+                </div>
+            </div>
+            <div class="row justify-content-around"> <!-- fila de bootstrap que distribuye los elementos -->
+                <div class="col-xl-5 align-self-center"> <!-- columna de bootstrap que se hace mas pequeña en desktop y centra verticalmente -->
                     <p class="table-text">
-                        Se considera la carrera más famosa del campeonato del mundo de Fórmula 1, y a través de los años muchas de sus curvas
+                        Se considera la carrera más famosa del campeonato del mundo de Fórmula 1, y a través de los
+                        años muchas de sus curvas
                         han recibido nombres especiales:
-                        <ul class="table-list"> <!-- lista en una de las celdas para describir la imagen de la misma fila-->
+                        <ul class="table-list">
+                            <!-- lista en una de las celdas para describir la imagen de la misma fila-->
                             <li>Curva 1: Sainte Devote</li>
                             <li>Curva 2: Beau Rivage</li>
                             <li>Curva 3: Massenet</li>
@@ -100,15 +140,18 @@
                             <li>Curva 19: Virage Antony Noghes</li>
                         </ul>
                     </p>
-                </td>
-                <td>
-                    <img class="track-image" src="images/track.png" alt="Diagrama de la pista"> <!-- imagen desde un archivo -->
-                </td>
-            </tr>
-        </table>
+                </div>
+                <div class="col-xl-7 align-self-center"> <!-- columna de bootstrap que se hace mas pequeña en desktop y centra verticalmente -->
+                    <img class="table-image" src="images/track.png" alt="diagrama de la pista"> <!-- imagen desde un archivo -->
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="bottom_container"> <!-- sección inferior que se muestra en todas las páginas -->
-        <a class="mail-link" href="mailto:riperezro@unal.edu.co" target="_blank">📧</a> <!-- emoji usado como botón para enviar un correo -->
+
+    <div class="bottom_container">
+        <!-- sección inferior que se muestra en todas las páginas -->
+        <a class="mail-link" href="mailto:riperezro@unal.edu.co" target="_blank">📧</a>
+        <!-- emoji usado como botón para enviar un correo -->
         <p class="my-name">Andrés Ricardo Pérez Rojas<br>Universidad Nacional de Colombia</p>
     </div>
 </body>

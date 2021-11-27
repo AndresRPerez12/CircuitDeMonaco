@@ -8,29 +8,175 @@
     <meta charset="UTF-8">
     <meta lang="es">
     <title>Le Circuit de Monaco</title>
-    <link rel="stylesheet" href="css/styles.css">   <!-- especificar hoja de estilos -->
     <link rel="icon" href="images/favicon.ico"> <!-- especificar ícono de la barra del navegador -->
     <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- importar una fuente desde Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+    rel="stylesheet">
+    <!-- importar Bootstrap para RWD -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/styles.css"> <!-- especificar hoja de estilos propia al final para mayor jerarquía -->
 </head>
 
 <body>
-    <div class="top_container"> <!-- sección superior que se muestra en todas las páginas -->
-        <h1 class="title"><a href="index.html" target="_self" class="title-link">Le Circuit de Monaco</a></h1> <!-- título principal que lleva al menú -->
-        <h2 class="subtitle">Monte Carlo, Mónaco</h2>
-        <nav>
-            <!-- menu principal de navegación -->
-            <a href="ubicacion.html" target="_self" class="boton-menu">Ubicación</a>
-            <a href="habitantes.html" target="_self" class="boton-menu">Habitantes</a>
-            <a href="actividades.html" target="_self" class="boton-menu">Actividades</a>
-            <a href="historia.html" target="_self" class="boton-menu">Historia</a>
-            <a href="creditos.html" target="_self" class="boton-menu">Créditos</a>
-        </nav>
+    <!-- sección superior que se muestra en todas las páginas - centra el texto de todo el contenedor -->
+    <div class="top_container text-center">
+        <div class="container-fluid">  <!-- contenedor de boostrap que utiliza el 100% del ancho de la pantalla -->
+            <div class="row justify-content-center"> <!-- fila de bootstrap que centra los elementos horizontalmente -->
+                <div class="col-12 col-md-10 col-xl-7"> <!-- columna de bootstrap que se hace mas grande en pantallas mas pequeñas -->
+                    <!-- título principal que lleva al menú -->
+                    <h1 class="title"><a href="index.html" target="_self" class="title-link">Le Circuit de Monaco</a></h1>
+                </div>
+            </div>
+            <div class="row justify-content-center"> <!-- fila de bootstrap que centra los elementos horizontalmente -->
+                <div class="col-11 col-md-8 col-xl-5"> <!-- columna de bootstrap que se hace mas grande en pantallas mas pequeñas -->
+                    <h2 class="subtitle">Monte Carlo, Mónaco</h2>
+                </div>
+            </div>
+        </div>
+        <!-- menu principal de navegación -->
+        <header>
+            <!-- el elemento header incluye el menu desplegable y el ícono que lo despliega -->
+            <input type="checkbox" id="menu-toggle"><!-- checkbox permite la opción boleana -->
+            <label for="menu-toggle"><img src="images/menu-toggle.png" width="30px"></label>
+            <!-- la imagen del ícono se muestra como label del checkbox pero se oculta cuando no se necesita -->
+            <nav class="menu double-menu">
+                <ul>
+                    <!-- los botones son elementos de una lista que define el menu pero mantiene el mismo diseño de cada botón, la posición de esta lista depende del estado del checkbox-->
+                    <li><a href="ubicacion.html" target="_self" class="boton-menu">Ubicación</a></li>
+                    <li><a href="habitantes.html" target="_self" class="boton-menu">Habitantes</a></li>
+                    <li><a href="actividades.html" target="_self" class="boton-menu">Actividades</a></li>
+                    <li><a href="historia.html" target="_self" class="boton-menu">Historia</a></li>
+                    <li><a href="creditos.html" target="_self" class="boton-menu">Créditos</a></li>
+                    <!-- botón que lleva a una sección diferente dentro de la misma página -->
+                    <li class="nav-subsection"><a href="#map-section" target="_self" class="boton-submenu">Mapa del sitio</a></li>
+                    <!-- botón que lleva a una sección diferente dentro de la misma página -->
+                    <li class="nav-subsection"><a href="#credits-section" target="_self" class="boton-submenu">Créditos</a></li>
+                </ul>
+            </nav>
+        </header>
     </div>
 
     <div class="main_container"> <!-- sección central que cambia en cada página -->
-        <h2 class="subpage-title">Créditos de imágenes e información</h2> <!-- título de la página específica -->
+        <nav class="inner-nav"> <!-- menu de navegación interno para esta página específica -->
+            <a href="#map-section" target="_self" class="boton-submenu">Mapa del sitio</a>   <!-- botón que lleva a una sección diferente dentro de la misma página -->
+            <a href="#credits-section" target="_self" class="boton-submenu">Créditos de imágenes e información</a>        <!-- botón que lleva a una sección diferente dentro de la misma página -->
+        </nav>
+
+        <h2 class="subpage-title" id="map-section">Mapa del sitio</h2> <!-- Sección del Mapa de Navegación -->
+        <div class="container-fluid map-container">  <!-- contenedor de boostrap que utiliza el 100% del ancho de la pantalla -->
+            <div class="row justify-content-center"> <!-- fila de bootstrap que centra los elementos horizontalmente -->
+                <div class="col-12 col-xl-10">
+                    <a href="index.html" target="_self" class="boton-map-title site-map-button">Le Circuit de Monaco</a> 
+                </div>
+            </div>
+            <div class="d-none d-xl-block"> <!-- clase de bootstrap que muestra los elementos solo en desktop -->
+                <div class="row justify-content-center"> <!-- fila de bootstrap que centra los elementos horizontalmente -->
+                    <div class="col-xl-2"> <!-- columna de bootstrap que se hace más pequeña en desktop (2 de 12) -->
+                        <a href="ubicacion.html" target="_self" class="boton-menu site-map-button">Ubicación</a> 
+                    </div>
+                    <div class="col-xl-2"> <!-- columna de bootstrap que se hace más pequeña en desktop (2 de 12) -->
+                        <a href="habitantes.html" target="_self" class="boton-menu site-map-button">Habitantes</a> 
+                    </div>
+                    <div class="col-xl-2"> <!-- columna de bootstrap que se hace más pequeña en desktop (2 de 12) -->
+                        <a href="actividades.html" target="_self" class="boton-menu site-map-button">Actividades</a> 
+                    </div>
+                    <div class="col-xl-2"> <!-- columna de bootstrap que se hace más pequeña en desktop (2 de 12) -->
+                        <a href="historia.html" target="_self" class="boton-menu site-map-button">Historia</a> 
+                    </div>
+                    <div class="col-xl-2"> <!-- columna de bootstrap que se hace más pequeña en desktop (2 de 12) -->
+                        <a href="creditos.html" target="_self" class="boton-menu site-map-button">Créditos</a> 
+                    </div>
+                </div>
+                <div class="row justify-content-center"> <!-- fila de bootstrap que centra los elementos horizontalmente -->
+                    <div class="col-xl-2"> <!-- columna de bootstrap que se hace más pequeña en desktop (2 de 12) -->
+                        <a href="ubicacion.html#ubicacion-section" target="_self" class="boton-submenu site-map-button">Ubicación del circuito</a>
+                    </div>
+                    <div class="col-xl-2"></div> <!-- columna de bootstrap vacía que se hace más pequeña en desktop (2 de 12) -->
+                    <div class="col-xl-2"> <!-- columna de bootstrap que se hace más pequeña en desktop (2 de 12) -->
+                        <a href="actividades.html#f1-section" target="_self" class="boton-submenu site-map-button">Gran Premio de Mónaco</a>
+                    </div>
+                    <div class="col-xl-2"></div> <!-- columna de bootstrap vacía que se hace más pequeña en desktop (2 de 12) -->
+                    <div class="col-xl-2"> <!-- columna de bootstrap que se hace más pequeña en desktop (2 de 12) -->
+                        <a href="creditos.html#map-section" target="_self" class="boton-submenu site-map-button">Mapa del sitio</a>
+                    </div>
+                </div>
+                <div class="row justify-content-center"> <!-- fila de bootstrap que centra los elementos horizontalmente -->
+                    <div class="col-xl-2"> <!-- columna de bootstrap que se hace más pequeña en desktop (2 de 12) -->
+                        <a href="ubicacion.html#track-section" target="_self" class="boton-submenu site-map-button">¿Cómo es el circuito?</a>
+                    </div>
+                    <div class="col-xl-2"></div> <!-- columna de bootstrap vacía que se hace más pequeña en desktop (2 de 12) -->
+                    <div class="col-xl-2"> <!-- columna de bootstrap que se hace más pequeña en desktop (2 de 12) -->
+                        <a href="actividades.html#fe-section" target="_self" class="boton-submenu site-map-button">ePrix de Mónaco</a>
+                    </div>
+                    <div class="col-xl-2"></div> <!-- columna de bootstrap vacía que se hace más pequeña en desktop (2 de 12) -->
+                    <div class="col-xl-2"> <!-- columna de bootstrap que se hace más pequeña en desktop (2 de 12) -->
+                        <a href="creditos.html#credits-section" target="_self" class="boton-submenu site-map-button">Créditos</a>
+                    </div>
+                </div>
+            </div>
+            <div class="d-xl-none"> <!-- clase de bootstrap que oculta los elementos en desktop -->
+                <div class="row justify-content-start"> <!-- fila de bootstrap que pone los elementos a la izquierda -->
+                    <div class="col-10">  <!-- columna de bootstrap con 10 de 12 unidades de ancho -->
+                        <a href="ubicacion.html" target="_self" class="boton-menu site-map-button">Ubicación</a> 
+                    </div>
+                </div>
+                <div class="row justify-content-start"> <!-- fila de bootstrap que pone los elementos a la izquierda -->
+                    <div class="col-8">  <!-- columna de bootstrap con 8 de 12 unidades de ancho -->
+                        <a href="ubicacion.html#ubicacion-section" target="_self" class="boton-submenu site-map-button">Ubicación del circuito</a> 
+                    </div>
+                </div>
+                <div class="row justify-content-start"> <!-- fila de bootstrap que pone los elementos a la izquierda -->
+                    <div class="col-8">  <!-- columna de bootstrap con 8 de 12 unidades de ancho -->
+                        <a href="ubicacion.html#track-section" target="_self" class="boton-submenu site-map-button">¿Cómo es el circuito?</a> 
+                    </div>
+                </div>
+                <div class="row justify-content-start"> <!-- fila de bootstrap que pone los elementos a la izquierda -->
+                    <div class="col-10">  <!-- columna de bootstrap con 10 de 12 unidades de ancho -->
+                        <a href="habitantes.html" target="_self" class="boton-menu site-map-button">Habitantes</a> 
+                    </div>
+                </div>
+                <div class="row justify-content-start"> <!-- fila de bootstrap que pone los elementos a la izquierda -->
+                    <div class="col-10">  <!-- columna de bootstrap con 10 de 12 unidades de ancho -->
+                        <a href="actividades.html" target="_self" class="boton-menu site-map-button">Actividades</a> 
+                    </div>
+                </div>
+                <div class="row justify-content-start"> <!-- fila de bootstrap que pone los elementos a la izquierda -->
+                    <div class="col-8">  <!-- columna de bootstrap con 8 de 12 unidades de ancho -->
+                        <a href="actividades.html#f1-section" target="_self" class="boton-submenu site-map-button">Gran Premio de Mónaco</a>
+                    </div>
+                </div>
+                <div class="row justify-content-start"> <!-- fila de bootstrap que pone los elementos a la izquierda -->
+                    <div class="col-8">  <!-- columna de bootstrap con 8 de 12 unidades de ancho -->
+                        <a href="actividades.html#fe-section" target="_self" class="boton-submenu site-map-button">ePrix de Mónaco</a>
+                    </div>
+                </div>
+                <div class="row justify-content-start"> <!-- fila de bootstrap que pone los elementos a la izquierda -->
+                    <div class="col-10">  <!-- columna de bootstrap con 10 de 12 unidades de ancho -->
+                        <a href="historia.html" target="_self" class="boton-menu site-map-button">Historia</a> 
+                    </div>
+                </div>
+                <div class="row justify-content-start"> <!-- fila de bootstrap que pone los elementos a la izquierda -->
+                    <div class="col-10">  <!-- columna de bootstrap con 10 de 12 unidades de ancho -->
+                        <a href="creditos.html" target="_self" class="boton-menu site-map-button">Créditos</a> 
+                    </div>
+                </div>
+                <div class="row justify-content-start"> <!-- fila de bootstrap que pone los elementos a la izquierda -->
+                    <div class="col-8">  <!-- columna de bootstrap con 8 de 12 unidades de ancho -->
+                        <a href="creditos.html#map-section" target="_self" class="boton-submenu site-map-button">Mapa del sitio</a>
+                    </div>
+                </div>
+                <div class="row justify-content-start"> <!-- fila de bootstrap que pone los elementos a la izquierda -->
+                    <div class="col-8">  <!-- columna de bootstrap con 8 de 12 unidades de ancho -->
+                        <a href="creditos.html#credits-section" target="_self" class="boton-submenu site-map-button">Créditos</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="subpage-title" id="credits-section">Créditos de imágenes e información</h2> <!-- título de la página específica -->
         <ul class="credits-list"> <!-- lista con las referencias que a su vez llevan a la página de origen al hacer click -->
             <li>
                 <a class="credits-link" target = _blank href="https://fonts.google.com/share?selection.family=Roboto:wght@300;400;500;700;900%7CTitillium%20Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700" > <!-- referencia que abre una pestaña nueva con la página de origen -->
@@ -91,7 +237,12 @@
                 <a class="credits-link" target = _blank href="http://en.espn.co.uk/f1/motorsport/story/150197.html" > <!-- referencia que abre una pestaña nueva con la página de origen -->
                     ESPN, Prost wins again in Monaco. 1985.
                 </a>
-            </li>            
+            </li>
+            <li>
+                <a  class="credits-link" target="_blank" href="https://www.clipartmax.com/middle/m2i8i8A0K9A0H7b1_navbar-toggle-icon-menu-hamburger-png-white/"> <!-- referencia que abre una pestaña nueva con la página de origen -->
+                    Navbar Toggle Icon - Menu Hamburger Png White @clipartmax.com
+                </a>
+            </li>          
         </ul>
     </div>
 

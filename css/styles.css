@@ -14,14 +14,14 @@ body { /* estilos generales para el cuerpo de la página */
     background-image: url(../images/tunnel.png);    /* fijar imagen de fondo desde un archivo */ 
     background-repeat:no-repeat;
     background-size:cover;
-    background-position: center 55%;    /* escoger que parte de la imagen se muestra  */ 
-    position: relative;                 /* posición relativa a su posición estática usual  */ 
+    background-position: center 55%;    /* escoger que parte de la imagen se muestra */ 
+    position: relative;                 /* posición relativa a su posición estática usual */ 
     padding-top: 10px;
     padding-bottom: 200px;  
 }
 
 .main_container { /* estilos para el contenedor central que varía en cada página */
-    padding: 10px 100px 20px;
+    padding: 10px 5% 20px;
     margin: 0;
 }
 
@@ -38,62 +38,231 @@ body { /* estilos generales para el cuerpo de la página */
     font-family: 'Titillium Web', 'Arial', sans-serif;
     font-style: italic;
     font-size: 20mm;
+    font-weight: bold;
     background-color: rgba(0, 0, 0, 0.5);   /* fijar el color de fondo del título incluyendo su opacidad */ 
-    margin-left: 25%;
-    margin-right: 25%;                      /* márgenes para que no llegue hasta los bordes laterales */ 
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
-a.title-link {
+a.title-link {     /* estilos del link del título principal */
     color: #ebebeb;
+    text-decoration: none;
 }
-a.title-link:visited {
+a.title-link:visited {       /* estilos del link del título principal */
     color: #ebebeb;
+    text-decoration: none;
 }
 a.title-link:hover {    /* estilo cuando el cursor está sobre el link */ 
 	color: #fc4545;
+    text-decoration: none;
 }
 
 .subtitle{  /* estilos del subtítulo principal */ 
     font-size: 10mm;
+    font-weight: bold;
     background-color: rgb(255, 255, 255, 0.6);  /* fijar el color de fondo del título incluyendo su opacidad */
-    margin-left: 30%;
-    margin-right: 30%;      /* márgenes para que no llegue hasta los bordes laterales */ 
     color: #a50202;
+    margin-top: 0;
+    margin-bottom: 20px;
 }
 
 .subpage-title{ /* estilos para el título de cada página individual en el contenedor principal */ 
     color: #a50202;
-    font-size: 10mm;
+    font-size: 12mm;
+    margin: 20px 0;
+}
+
+.subpage-subtitle{  /* estilos para los subtítulos de cada página en el contendor principal */ 
+    color: #131212;
+    font-size: 9mm;
+    margin: 20px 0;
 }
 
 /******************************* BOTONES **********************/
 
 a.boton-menu:visited {  /* estilos para los botones principales del menú cuando el link ya ha sido visitado */ 
+    color: #a50202;
+}
+
+a.boton-submenu:visited {  /* estilos para los botones cuando el link ya ha sido visitado */ 
     color: #ffffff;
 }
 
-.boton-menu {           /* estilos para los botones del menú, generados en https://www.bestcssbuttongenerator.com/ */
-	box-shadow: 3px 4px 0px 0px #8a2a21;
-	background:linear-gradient(to bottom, #a50202 5%, #f24437 100%);
+a.boton-map-title:visited {  /* estilos para los botones cuando el link ya ha sido visitado */ 
+    color: #ffffff;
+}
+
+.boton-menu { /* estilos para los botones del menú, generados en https://www.bestcssbuttongenerator.com/ */
+	background:linear-gradient(to bottom, #ffffff 5%, #fcd6d6 100%);
+	background-color:#ffffff;
+	border-radius:6px;
+	border:3px transparent;
+	display:inline-block;
+	cursor:pointer;
+	color:#a50202;
+	font-size:17px;
+	font-weight:bold;
+	padding:7px 25px;
+	text-decoration:none;
+	min-width: 160px;
+}
+.boton-menu:hover { /* estilos para los botones del menú, generados en https://www.bestcssbuttongenerator.com/ */
+	background:linear-gradient(to bottom, #fcd6d6 5%, #ffffff 100%);
+	background-color:#fcd6d6;
+	color: #a50202;
+	text-decoration: none;
+}
+.boton-menu:active { /* estilos para los botones del menú, generados en https://www.bestcssbuttongenerator.com/ */
+	position:relative;
+	top:1px;
+}
+
+.boton-submenu { /* estilos para los botones del menú, generados en https://www.bestcssbuttongenerator.com/ */
+	background:linear-gradient(to bottom, #a50202 5%, #a83737 100%);
 	background-color:#a50202;
-	border-radius:18px;
-	border:1px solid #d02718;
+	border-radius:6px;
+	border:3px transparent;
 	display:inline-block;
 	cursor:pointer;
 	color:#ffffff;
 	font-size:17px;
+	font-weight:bold;
 	padding:7px 25px;
 	text-decoration:none;
-	text-shadow:0px 1px 0px #810e05;
+	min-width: 250px;
 }
-.boton-menu:hover {     /* estilos para los botones del menú, generados en https://www.bestcssbuttongenerator.com/ */
-	background:linear-gradient(to bottom, #f24437 5%, #a50202 100%);
-	background-color:#f24437;
-    color: #ffffff;
+.boton-submenu:hover { /* estilos para los botones del menú, generados en https://www.bestcssbuttongenerator.com/ */
+	background:linear-gradient(to bottom, #a83737 5%, #a50202 100%);
+	background-color:#a83737;
+	color: #ffffff;
+	text-decoration: none;
 }
-.boton-menu:active {    /* estilos para los botones del menú, generados en https://www.bestcssbuttongenerator.com/ */
+.boton-submenu:active { /* estilos para los botones del menú, generados en https://www.bestcssbuttongenerator.com/ */
 	position:relative;
 	top:1px;
+}
+
+.boton-map-title { /* estilos para los botones del menú, generados en https://www.bestcssbuttongenerator.com/ */
+	background:linear-gradient(to bottom, #131212 5%, #333232 100%);
+	background-color:#131212;
+	border-radius:6px;
+	border:3px solid #131212;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:17px;
+	font-weight:bold;
+	padding:7px 25px;
+	text-decoration:none;
+}
+.boton-map-title:hover { /* estilos para los botones del menú, generados en https://www.bestcssbuttongenerator.com/ */
+	background:linear-gradient(to bottom, #333232 5%, #131212 100%);
+	background-color:#131212;
+	color: #ffffff;
+	text-decoration: none;
+}
+.boton-map-title:active { /* estilos para los botones del menú, generados en https://www.bestcssbuttongenerator.com/ */
+	position:relative;
+	top:1px;
+}
+
+/******************************* MENÚ DESPLEGABLE **********************/
+
+#menu-toggle {    /* estilos del checkbox */
+    display: none;    /* oculta el checkbox cuando no es necesario */
+}
+
+.menu ul{    /* estilos de la lista del menú desplegable */
+    list-style: none;     /* para evitar los bullit list en la lista*/
+    padding: 0;
+    display: flex;
+    gap: 10px;    /* espacio entre los elementos en un flexbox */
+    justify-content: center;    /* centra los elementos de un flexbox */
+}
+
+.menu li{    /* estilos de los elementos de la lista del menú desplegable */
+    width: 160px;
+    height: 30px;
+    text-decoration: none; 
+    margin: 10px 0;
+} 
+
+.menu li a {    /* estilos de los links en la lista desplegable */
+    display: block;
+    text-decoration: none;    
+    padding-top:6px;  
+}
+
+header {    /* header que contiene los botones y el menú desplegable */
+    width: 100%;
+	z-index: 30;	/* coloca el checkbox por encima del contenido*/
+}
+
+header label {     /* coloca el checkbox en un lugar y tamaño exactos*/
+    display: none;
+    width: 30px;
+    height: 30px;
+    position: fixed;    /* queda fijo en la pantalla independiente del scroll */
+    left: 20px;    /* coordenadas exactas del checkbox */
+    top: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 6px;
+} 
+
+header label:hover {
+    cursor: pointer;    /* cambia el cursor sobre el checkbox para indicar la interacción*/
+}
+
+.menu .nav-subsection{    /* oculta los botones de navegacion internos de cada página cuando el menú desplegable no está disponible */
+    display: none;
+}
+
+/* cuando la ventana mida menos de 1200px (tableta o teléfono) */
+/* estilos para mostrar el checkbox y el menú desplegable */
+@media only screen and (max-width: 1200px) {
+    header label{
+        display: block; /* se muestra el checkbox cuando se reduce la ventana*/
+        z-index: 30;
+    }
+
+    .menu {    /* estilos del menú desplegable */
+        position: fixed;  /* sostiene la posición aunque se haga scroll en el contenido */
+        top: 60px;      /* coordenadas específicas */
+        left: 20px;
+        background: rgba(0, 0, 0, 0.5); 
+        border-radius: 6px;
+		z-index: 30; /* para asegurar que el menu esta por encima de todo lo demás*/
+        width: 200px; /* se refiere al ancho del fondo del menu y no a los botones */
+        margin-left: -60%; /* se oculta porque se coloca por fuera de la ventana*/
+		margin-top: 4px;
+        transition: all 1s;   /* la animación de desplegar el menu dura 1 segundo*/
+    } 
+
+    .menu.double-menu{    /* configura el ancho del fondo del menú cuando tiene botones de navegación interna */
+        width: 290px; /* se refiere al ancho del fondo del menu y no a los botones */
+    }
+
+    .double-menu .boton-menu{    /* configura el ancho de los botones del menú desplegable cuando tiene botones de navegación interna  */
+        min-width: 250px;
+    }
+
+    .menu ul {    /* estilos de la lista del menú desplegable */
+        flex-direction: column;  /* se despliega en sentido vertical*/
+        margin-left: 20px; 
+    } 
+
+    #menu-toggle:checked ~ .menu {  /* el checkbox controla las dos posiciones del menu */
+        margin: 1px; 
+    } 
+
+    .menu .nav-subsection{    /* muestra los botones de navegación interna de la página cuando se usa el menú desplegable */
+        display: block;
+    }
+
+    .inner-nav .boton-submenu{    /* oculta los botones de navegación interna en el contenedor principal cuando se usa el menú desplegable */
+        display: none;
+    }
+
 }
 
 /******************************* ELEMENTOS CONTENEDOR INFERIOR **********************/
@@ -112,14 +281,19 @@ a{
     text-decoration:none; /* para que no subraye los vínculos */ 
 }
 
+a:hover{
+    text-decoration:none; /* para que no subraye los vínculos */ 
+}
+
 .table-image{   /* estilos para las imágenes que van dentro de tablas */
-    width: 90%;
+    width: 100%;
+    margin: 20px 0;
 }
 
 .table-text{    /* estilos para el texto que va dentro de tablas */
     text-align: left;
     font-size: 6mm;
-    padding: 20px;
+    padding: 20px 0;
 }
 
 .table-list{    /* estilos para las listas que van dentro de tablas */
@@ -145,45 +319,75 @@ a{
     background-color: #a50202;
 }
 
-/******************************* UBICACIÓN **********************/
-
-.flag-image{    /* estilos para la imagen de la bandera de Mónaco */
-    width: 40%;
-}
-
-.track-image{   /* estilos para la imagen con el diagrama del circuito */
-    width: 90%;
-    padding: 0;
-    margin: 0;
+.body-text{ /* estilos para el texto general del body */
+    text-align: center;
+    font-size: 6mm;
+    padding: 20px 0;
 }
 
 .body-image{        /* estilos para las imágenes en el cuerpo de la página */
-    width: 60%;
+    width: 95%;
+}
+
+/******************************* UBICACIÓN **********************/
+
+.flag-image{    /* estilos para la imagen de la bandera de Mónaco */
+    margin: 20px 0;
+    border: 5px groove;
+}
+
+.track-image{   /* estilos para la imagen con el diagrama del circuito */
+    margin: 20px 0;
 }
 
 /******************************* HABITANTES **********************/
 
 .resident-image{    /* estilos para las imágenes de los residentes notables */
-    width: 35%;
-    padding: 10px;
+    width: 100%;
+    margin: 10px 0;
 }
 
 .resident-text{     /* estilos para el texto sobre los residentes notables */
-    font-size: 6mm;
+    font-size: 8mm;
     font-weight: bold;
 }
 
 /******************************* HISTORIA **********************/
 
 .winner-image{      /* estilos para las imágenes de los ganadores en Mónaco */
-    width: 50%;
-    padding: 10px;
+    width: 100%;
+    margin: 10px 0;
 }
 
 .winner-text{       /* estilos para el texto sobre los ganadores en Mónaco */
-    font-size: 6mm;
+    font-size: 7mm;
     font-weight: bold;
-    padding: 10px;
+}
+
+/******************************* MAPA DEL SITIO **********************/
+
+.site-map-button.boton-map-title{    /* estilos para los botones cuando están en el mapa del sitio */
+    min-width: 0;
+    width: 100%;    /* permite que el ancho dependa de las clases de bootstrap aplicadas */
+    margin: 5px 0;
+}
+
+.site-map-button.boton-menu{    /* estilos para los botones cuando están en el mapa del sitio */
+    min-width: 0;
+    width: 100%;    /* permite que el ancho dependa de las clases de bootstrap aplicadas */
+    margin: 5px 0;
+}
+
+.site-map-button.boton-submenu{    /* estilos para los botones cuando están en el mapa del sitio */
+    min-width: 0;
+    width: 100%;    /* permite que el ancho dependa de las clases de bootstrap aplicadas */
+    margin: 5px 0;
+}
+
+.map-container{    /* estilos para el fondo del mapa del sitio */
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 /******************************* CRÉDITOS **********************/
@@ -194,6 +398,7 @@ a{
 
 .credits-link{      /* estilos de los créditos que llevan a sus páginas de origen */ 
     color:#131212;
+    font-size: 5mm;
 }
 
 .credits-link:hover{    /* estilos de los créditos que llevan a sus páginas de origen cuando pasa el cursor por encima */ 

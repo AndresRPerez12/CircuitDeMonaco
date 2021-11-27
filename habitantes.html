@@ -8,170 +8,200 @@
     <meta charset="UTF-8">
     <meta lang="es">
     <title>Le Circuit de Monaco</title>
-    <link rel="stylesheet" href="css/styles.css">   <!-- especificar hoja de estilos -->
     <link rel="icon" href="images/favicon.ico"> <!-- especificar ícono de la barra del navegador -->
     <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- importar una fuente desde Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+    rel="stylesheet">
+    <!-- importar Bootstrap para RWD -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/styles.css"> <!-- especificar hoja de estilos propia al final para mayor jerarquía -->
 </head>
 
 <body>
-    <div class="top_container"> <!-- sección superior que se muestra en todas las páginas -->
-        <h1 class="title"><a href="index.html" target="_self" class="title-link">Le Circuit de Monaco</a></h1> <!-- título principal que lleva al menú -->
-        <h2 class="subtitle">Monte Carlo, Mónaco</h2>
-        <nav>
-            <!-- menu principal de navegación -->
-            <a href="ubicacion.html" target="_self" class="boton-menu">Ubicación</a>
-            <a href="habitantes.html" target="_self" class="boton-menu">Habitantes</a>
-            <a href="actividades.html" target="_self" class="boton-menu">Actividades</a>
-            <a href="historia.html" target="_self" class="boton-menu">Historia</a>
-            <a href="creditos.html" target="_self" class="boton-menu">Créditos</a>
-        </nav>
+    <!-- sección superior que se muestra en todas las páginas - centra el texto de todo el contenedor -->
+    <div class="top_container text-center">
+        <div class="container-fluid">  <!-- contenedor de boostrap que utiliza el 100% del ancho de la pantalla -->
+            <div class="row justify-content-center"> <!-- fila de bootstrap que centra los elementos horizontalmente -->
+                <div class="col-12 col-md-10 col-xl-7"> <!-- columna de bootstrap que se hace mas grande en pantallas mas pequeñas -->
+                    <!-- título principal que lleva al menú -->
+                    <h1 class="title"><a href="index.html" target="_self" class="title-link">Le Circuit de Monaco</a></h1>
+                </div>
+            </div>
+            <div class="row justify-content-center"> <!-- fila de bootstrap que centra los elementos horizontalmente -->
+                <div class="col-11 col-md-8 col-xl-5"> <!-- columna de bootstrap que se hace mas grande en pantallas mas pequeñas -->
+                    <h2 class="subtitle">Monte Carlo, Mónaco</h2>
+                </div>
+            </div>
+        </div>
+        <!-- menu principal de navegación -->
+        <header>
+            <!-- el elemento header incluye el menu desplegable y el ícono que lo despliega -->
+            <input type="checkbox" id="menu-toggle"><!-- checkbox permite la opción boleana -->
+            <label for="menu-toggle"><img src="images/menu-toggle.png" width="30px"></label>
+            <!-- la imagen del ícono se muestra como label del checkbox pero se oculta cuando no se necesita -->
+            <nav class="menu">
+                <ul>
+                    <!-- los botones son elementos de una lista que define el menu pero mantiene el mismo diseño de cada botón, la posición de esta lista depende del estado del checkbox-->
+                    <li><a href="ubicacion.html" target="_self" class="boton-menu">Ubicación</a></li>
+                    <li><a href="habitantes.html" target="_self" class="boton-menu">Habitantes</a></li>
+                    <li><a href="actividades.html" target="_self" class="boton-menu">Actividades</a></li>
+                    <li><a href="historia.html" target="_self" class="boton-menu">Historia</a></li>
+                    <li><a href="creditos.html" target="_self" class="boton-menu">Créditos</a></li>
+                </ul>
+            </nav>
+        </header>
     </div>
 
     <div class="main_container"> <!-- sección central que cambia en cada página -->
-        <h2 class="subpage-title">Habitantes de la ciudad</h2> <!-- título de la página específica -->
-        <p>
-            El Principado de Mónaco solo tiene 38,400 habitantes. En los días de competición en el circuito, hasta 7,500 personas
-            pueden ver la carrera desde las gradas. Sus bajos impuestos, casino y ubicación han atraido a muchas personas con
-            abundantes recursos que han decidido vivir en Mónaco, la gran mayoría extranjeros.
-        </p>
-        <h2 class="subpage-title">Algunos pilotos que viven en Mónaco</h2> <!-- título de la página específica -->
-        <p>
-            Notablemente para el circuito, en Mónaco residen muchos pilotos actuales y pasados de la Fórmula 1:
-        </p>
-        <table> <!-- tabla con dos columnas para poner imagenes junto a texto -->
-            <tr>
-                <td>
+        <div class="container-fluid">  <!-- contenedor de boostrap que utiliza el 100% del ancho de la pantalla -->
+            <h2 class="subpage-title">Habitantes de la ciudad</h2> <!-- título de la página específica -->
+            <div class="row justify-content-center"> <!-- fila de bootstrap que centra los elementos horizontalmente -->
+                <div class="col-md-10"> <!-- columna de bootstrap que se hace un poco más pequeña en tablet y desktop -->
+                    <p class="body-text">
+                        El Principado de Mónaco solo tiene 38,400 habitantes. En los días de competición en el circuito, hasta 7,500 personas
+                        pueden ver la carrera desde las gradas. Sus bajos impuestos, casino y ubicación han atraido a muchas personas con
+                        abundantes recursos que han decidido vivir en Mónaco, la gran mayoría extranjeros.
+                    </p>
+                </div>
+            </div>
+            <h2 class="subpage-title">Algunos pilotos que viven en Mónaco</h2> <!-- título de la página específica -->
+            <p class="body-text">
+                Notablemente para el circuito, en Mónaco residen muchos pilotos actuales y pasados de la Fórmula 1:
+            </p>
+            <div class="row justify-content-center"> <!-- fila de bootstrap que centra los elementos horizontalmente -->
+                <div class="col-xl-4 col-md-6"> <!-- columna de bootstrap que se hace más pequeña en pantallas más grandes -->
                     <img class="resident-image" src="images/residents/hamilton.png" alt="Lewis Hamilton"> <!-- imagen desde un archivo -->
-                </td>
-                <td>
+                </div>
+                <div class="col-xl-4 align-self-center"> <!-- columna de bootstrap que se hace más pequeña en desktop y centra verticalmente -->
                     <p class="resident-text">
                         Lewis Hamilton
                     </p>
-                </td>
-            </tr>
-            <tr>
-                <td>
+                </div>
+            </div>
+            <div class="row justify-content-center"> <!-- fila de bootstrap que centra los elementos horizontalmente -->
+                <div class="col-xl-4 col-md-6"> <!-- columna de bootstrap que se hace más pequeña en pantallas más grandes -->
                     <img class="resident-image" src="images/residents/verstappen.png" alt="Max Verstappen"> <!-- imagen desde un archivo -->
-                </td>
-                <td>
+                </div>
+                <div class="col-xl-4 align-self-center"> <!-- columna de bootstrap que se hace más pequeña en desktop y centra verticalmente -->
                     <p class="resident-text">
                         Max Verstappen
                     </p>
-                </td>
-            </tr>
-            <tr>
-                <td>
+                </div>
+            </div>
+            <div class="row justify-content-center"> <!-- fila de bootstrap que centra los elementos horizontalmente -->
+                <div class="col-xl-4 col-md-6"> <!-- columna de bootstrap que se hace más pequeña en pantallas más grandes -->
                     <img class="resident-image" src="images/residents/leclerc.png" alt="Charles Leclerc"> <!-- imagen desde un archivo -->
-                </td>
-                <td>
+                </div>
+                <div class="col-xl-4 align-self-center"> <!-- columna de bootstrap que se hace más pequeña en desktop y centra verticalmente -->
                     <p class="resident-text">
                         Charles Leclerc
                     </p>
-                </td>
-            </tr>
-            <tr>
-                <td>
+                </div>
+            </div>
+            <div class="row justify-content-center"> <!-- fila de bootstrap que centra los elementos horizontalmente -->
+                <div class="col-xl-4 col-md-6"> <!-- columna de bootstrap que se hace más pequeña en pantallas más grandes -->
                     <img class="resident-image" src="images/residents/rosberg.png" alt="Nico Rosberg"> <!-- imagen desde un archivo -->
-                </td>
-                <td>
+                </div>
+                <div class="col-xl-4 align-self-center"> <!-- columna de bootstrap que se hace más pequeña en desktop y centra verticalmente -->
                     <p class="resident-text">
                         Nico Rosberg
                     </p>
-                </td>
-            </tr>
-            <tr>
-                <td>
+                </div>
+            </div>
+            <div class="row justify-content-center"> <!-- fila de bootstrap que centra los elementos horizontalmente -->
+                <div class="col-xl-4 col-md-6"> <!-- columna de bootstrap que se hace más pequeña en pantallas más grandes -->
                     <img class="resident-image" src="images/residents/bottas.png" alt="Valteri Bottas"> <!-- imagen desde un archivo -->
-                </td>
-                <td>
+                </div>
+                <div class="col-xl-4 align-self-center"> <!-- columna de bootstrap que se hace más pequeña en desktop y centra verticalmente -->
                     <p class="resident-text">
                         Valtteri Bottas
                     </p>
-                </td>
-            </tr>
-            <tr>
-                <td>
+                </div>
+            </div>
+            <div class="row justify-content-center"> <!-- fila de bootstrap que centra los elementos horizontalmente -->
+                <div class="col-xl-4 col-md-6"> <!-- columna de bootstrap que se hace más pequeña en pantallas más grandes -->
                     <img class="resident-image" src="images/residents/ricciardo.png" alt="Daniel Ricciardo"> <!-- imagen desde un archivo -->
-                </td>
-                <td>
+                </div>
+                <div class="col-xl-4 align-self-center"> <!-- columna de bootstrap que se hace más pequeña en desktop y centra verticalmente -->
                     <p class="resident-text">
                         Daniel Ricciardo
                     </p>
-                </td>
-            </tr>
-            <tr>
-                <td>
+                </div>
+            </div>
+            <div class="row justify-content-center"> <!-- fila de bootstrap que centra los elementos horizontalmente -->
+                <div class="col-xl-4 col-md-6"> <!-- columna de bootstrap que se hace más pequeña en pantallas más grandes -->
                     <img class="resident-image" src="images/residents/hakkinen.jpg" alt="Mika Hakinnen"> <!-- imagen desde un archivo -->
-                </td>
-                <td>
+                </div>
+                <div class="col-xl-4 align-self-center"> <!-- columna de bootstrap que se hace más pequeña en desktop y centra verticalmente -->
                     <p class="resident-text">
                         Mika Hakinnen
                     </p>
-                </td>
-            </tr>
-            <tr>
-                <td>
+                </div>
+            </div>
+            <div class="row justify-content-center"> <!-- fila de bootstrap que centra los elementos horizontalmente -->
+                <div class="col-xl-4 col-md-6"> <!-- columna de bootstrap que se hace más pequeña en pantallas más grandes -->
                     <img class="resident-image" src="images/residents/albon.png" alt="Alex Albon"> <!-- imagen desde un archivo -->
-                </td>
-                <td>
+                </div>
+                <div class="col-xl-4 align-self-center"> <!-- columna de bootstrap que se hace más pequeña en desktop y centra verticalmente -->
                     <p class="resident-text">
                         Alex Albon
                     </p>
-                </td>
-            </tr>
-            <tr>
-                <td>
+                </div>
+            </div>
+            <div class="row justify-content-center"> <!-- fila de bootstrap que centra los elementos horizontalmente -->
+                <div class="col-xl-4 col-md-6"> <!-- columna de bootstrap que se hace más pequeña en pantallas más grandes -->
                     <img class="resident-image" src="images/residents/giovinazzi.jpg" alt="Antonio Giovinazzi"> <!-- imagen desde un archivo -->
-                </td>
-                <td>
+                </div>
+                <div class="col-xl-4 align-self-center"> <!-- columna de bootstrap que se hace más pequeña en desktop y centra verticalmente -->
                     <p class="resident-text">
                         Antonio Giovinazzi
                     </p>
-                </td>
-            </tr>
-            <tr>
-                <td>
+                </div>
+            </div>
+            <div class="row justify-content-center"> <!-- fila de bootstrap que centra los elementos horizontalmente -->
+                <div class="col-xl-4 col-md-6"> <!-- columna de bootstrap que se hace más pequeña en pantallas más grandes -->
                     <img class="resident-image" src="images/residents/coulthard.png" alt="David Coulthard"> <!-- imagen desde un archivo -->
-                </td>
-                <td>
+                </div>
+                <div class="col-xl-4 align-self-center"> <!-- columna de bootstrap que se hace más pequeña en desktop y centra verticalmente -->
                     <p class="resident-text">
                         David Coulthard
                     </p>
-                </td>
-            </tr>
-            <tr>
-                <td>
+                </div>
+            </div>
+            <div class="row justify-content-center"> <!-- fila de bootstrap que centra los elementos horizontalmente -->
+                <div class="col-xl-4 col-md-6"> <!-- columna de bootstrap que se hace más pequeña en pantallas más grandes -->
                     <img class="resident-image" src="images/residents/kvyat.jpg" alt="Daniil Kvyat"> <!-- imagen desde un archivo -->
-                </td>
-                <td>
+                </div>
+                <div class="col-xl-4 align-self-center"> <!-- columna de bootstrap que se hace más pequeña en desktop y centra verticalmente -->
                     <p class="resident-text">
                         Daniil Kvyat
                     </p>
-                </td>
-            </tr>
-            <tr>
-                <td>
+                </div>
+            </div>
+            <div class="row justify-content-center"> <!-- fila de bootstrap que centra los elementos horizontalmente -->
+                <div class="col-xl-4 col-md-6"> <!-- columna de bootstrap que se hace más pequeña en pantallas más grandes -->
                     <img class="resident-image" src="images/residents/berger.png" alt="Gerhard Berger"> <!-- imagen desde un archivo -->
-                </td>
-                <td>
+                </div>
+                <div class="col-xl-4 align-self-center"> <!-- columna de bootstrap que se hace más pequeña en desktop y centra verticalmente -->
                     <p class="resident-text">
                         Gerhard Berger
                     </p>
-                </td>
-            </tr>
-            <tr>
-                <td>
+                </div>
+            </div>
+            <div class="row justify-content-center"> <!-- fila de bootstrap que centra los elementos horizontalmente -->
+                <div class="col-xl-4 col-md-6"> <!-- columna de bootstrap que se hace más pequeña en pantallas más grandes -->
                     <img class="resident-image" src="images/residents/patrese.png" alt="Riccardo Patrese"> <!-- imagen desde un archivo -->
-                </td>
-                <td>
+                </div>
+                <div class="col-xl-4 align-self-center"> <!-- columna de bootstrap que se hace más pequeña en desktop y centra verticalmente -->
                     <p class="resident-text">
                         Riccardo Patrese
                     </p>
-                </td>
-            </tr>
-        </table>
+                </div>
+            </div>
+        </div>
     </div>
 
     <div class="bottom_container"> <!-- sección inferior que se muestra en todas las páginas -->
