@@ -97,7 +97,7 @@ a.boton-menu:visited {  /* estilos para los botones principales del menú cuando
 	padding:7px 25px;
 	text-shadow:0px 1px 0px #810e05;
     text-decoration: none;
-    min-width: 160px;
+    min-width: 160px; 
 }
 .boton-menu:hover {     /* estilos para los botones del menú, generados en https://www.bestcssbuttongenerator.com/ */
 	background:linear-gradient(to bottom, #f24437 5%, #a50202 100%);
@@ -120,6 +120,7 @@ a.boton-menu:visited {  /* estilos para los botones principales del menú cuando
     list-style: none;     /* para evitar los bullit list en la lista*/
     padding: 0;
     display: flex;
+    gap: 10px;
 }
 
 .menu li{
@@ -132,7 +133,7 @@ a.boton-menu:visited {  /* estilos para los botones principales del menú cuando
 .menu li a {
     display: block;
     text-decoration: none;    
-    padding-top:6px;    
+    padding-top:6px;  
 }
 
 header {
@@ -165,7 +166,7 @@ header label:hover {
 
     .menu {
         position: fixed;  /* sostiene la posición aunque se haga scroll en el contenido */
-        background: rgba(0, 0, 0, 0.5); /* rojo, verde, azul, alpha (transparencia) */
+        background: rgba(0, 0, 0, 0.5); 
 		z-index: 30; /* para asegurar que el menu esta por encima de todo lo demás*/
         width: 40%; /* se refiere al ancho del fondo del menu y no a los botones */
         margin-left: -60%; /* se oculta porque se coloca por fuera de la ventana*/
