@@ -21,22 +21,22 @@
 </head>
 
 <body>
-    <!-- sección superior que se muestra en todas las páginas -->
+    <!-- sección superior que se muestra en todas las páginas - centra el texto de todo el contenedor -->
     <div class="top_container text-center">
-        <div class="container-fluid">
-            <div class="row justify-content-center">
-                <div class="col-12 col-md-10 col-xl-7">
+        <div class="container-fluid">  <!-- contenedor de boostrap que utiliza el 100% del ancho de la pantalla -->
+            <div class="row justify-content-center"> <!-- fila de bootstrap que centra los elementos horizontalmente -->
+                <div class="col-12 col-md-10 col-xl-7"> <!-- columna de bootstrap que se hace más grande en pantallas más pequeñas -->
                     <!-- título principal que lleva al menú -->
                     <h1 class="title"><a href="index.html" target="_self" class="title-link">Le Circuit de Monaco</a></h1>
                 </div>
             </div>
-            <div class="row justify-content-center">
-                <div class="col-11 col-md-8 col-xl-5">
+            <div class="row justify-content-center"> <!-- fila de bootstrap que centra los elementos horizontalmente -->
+                <div class="col-11 col-md-8 col-xl-5"> <!-- columna de bootstrap que se hace mas grande en pantallas mas pequeñas -->
                     <h2 class="subtitle">Monte Carlo, Mónaco</h2>
                 </div>
             </div>
-            <!-- menu principal de navegación -->
         </div>
+        <!-- menu principal de navegación -->
         <header>
             <!-- el elemento header incluye el menu desplegable y el ícono que lo despliega -->
             <input type="checkbox" id="menu-toggle"><!-- checkbox permite la opción boleana -->
@@ -50,17 +50,17 @@
                     <li><a href="actividades.html" target="_self" class="boton-menu">Actividades</a></li>
                     <li><a href="historia.html" target="_self" class="boton-menu">Historia</a></li>
                     <li><a href="creditos.html" target="_self" class="boton-menu">Créditos</a></li>
+                    <!-- botón que lleva a una sección diferente dentro de la misma página -->
                     <li class="nav-subsection"><a href="#ubicacion-section" target="_self" class="boton-submenu">Ubicación del circuito</a></li>
                     <!-- botón que lleva a una sección diferente dentro de la misma página -->
                     <li class="nav-subsection"><a href="#track-section" target="_self" class="boton-submenu">¿Cómo es el circuito?</a></li>
-                    <!-- botón que lleva a una sección diferente dentro de la misma página -->
                 </ul>
             </nav>
         </header>
     </div>
 
     <div class="main_container"> <!-- sección central que cambia en cada página -->
-        <div class="container-fluid">
+        <div class="container-fluid">  <!-- contenedor de boostrap que utiliza el 100% del ancho de la pantalla -->
             <nav class="inner-nav">
                 <!-- menu de navegación interno para esta página específica -->
                 <a href="#ubicacion-section" target="_self" class="boton-submenu">Ubicación del circuito</a>
@@ -69,11 +69,11 @@
                 <!-- botón que lleva a una sección diferente dentro de la misma página -->
             </nav>
             <h2 class="subpage-title" id="ubicacion-section">Ubicación del circuito</h2> <!-- título de la página específica -->
-            <div class="row justify-content-around">
-                <div class="col-xl-5">
+            <div class="row justify-content-around"> <!-- fila de bootstrap que distribuye los elementos -->
+                <div class="col-xl-5"> <!-- columna de bootstrap que se hace mas pequeña en desktop -->
                     <img class="table-image" src="images/location.jpg" alt="ubicacion de monaco"> <!-- imagen desde un archivo -->
                 </div>
-                <div class="col-xl-5 align-self-center">
+                <div class="col-xl-5 align-self-center"> <!-- columna de bootstrap que se hace mas pequeña en desktop y centra verticalmente -->
                     <p class="table-text">
                         El circuito de Mónaco se encuentra en el Principado de Mónaco, un muy pequeño país al sur de
                         Francia sobre el mediterraneo. Al circuito también se le conoce como Monte Carlo dado que gran
@@ -81,8 +81,8 @@
                     </p>
                 </div>
             </div>
-            <div class="row justify-content-around">
-                <div class="col-xl-5 col-md-6 align-self-center">
+            <div class="row justify-content-around"> <!-- fila de bootstrap que distribuye los elementos -->
+                <div class="col-xl-5 col-md-6 align-self-center"> <!-- columna de bootstrap que se hace mas pequeña en desktop y tablet, y centra verticalmente -->
                     <p class="table-text">
                         <a href="https://www.britannica.com/place/Monaco" target="_blank" class="text-link">Mónaco</a>
                         es una ciudad estado de apenas 38,400 habitantes. Queda a 15 kilómetros de la ciudad francesa
@@ -90,17 +90,17 @@
                         playas, infraestructura náutica y el Place du Casino en Monte Carlo.
                     </p>
                 </div>
-                <div class="col-xl-3 col-md-5 col-9 align-self-center">
+                <div class="col-xl-3 col-md-5 col-9 align-self-center"> <!-- columna de bootstrap que se hace más grande en pantallas más pequeñas -->
                     <img class="table-image flag-image" src="images/flag.svg" alt="bandera de monaco"> <!-- imagen desde un archivo -->
                 </div>
             </div>
             <h2 class="subpage-title" id="track-section">¿Cómo es el circuito?</h2>
             <!-- título de la página específica -->
-            <div class="row justify-content-around">
-                <div class="col-xl-6 align-self-center">
+            <div class="row justify-content-around"> <!-- fila de bootstrap que distribuye los elementos -->
+                <div class="col-xl-6 align-self-center"> <!-- columna de bootstrap que se hace mas pequeña en desktop y centra verticalmente -->
                     <img class="table-image" src="images/harbor.jpg" alt="Bahia de Monaco">  <!-- imagen desde un archivo -->
                 </div>
-                <div class="col-xl-5 align-self-center">
+                <div class="col-xl-5 align-self-center"> <!-- columna de bootstrap que se hace mas pequeña en desktop y centra verticalmente -->
                     <p class="table-text">
                         Para la <a href="https://www.formula1.com/en/racing/2021/Monaco/Circuit.html"
                             target="_blank" class="text-link">Fórmula 1</a>, el circuito
@@ -116,8 +116,8 @@
                     </p>
                 </div>
             </div>
-            <div class="row justify-content-around">
-                <div class="col-xl-5 align-self-center">
+            <div class="row justify-content-around"> <!-- fila de bootstrap que distribuye los elementos -->
+                <div class="col-xl-5 align-self-center"> <!-- columna de bootstrap que se hace mas pequeña en desktop y centra verticalmente -->
                     <p class="table-text">
                         Se considera la carrera más famosa del campeonato del mundo de Fórmula 1, y a través de los
                         años muchas de sus curvas
@@ -141,7 +141,7 @@
                         </ul>
                     </p>
                 </div>
-                <div class="col-xl-7 align-self-center">
+                <div class="col-xl-7 align-self-center"> <!-- columna de bootstrap que se hace mas pequeña en desktop y centra verticalmente -->
                     <img class="table-image" src="images/track.png" alt="diagrama de la pista"> <!-- imagen desde un archivo -->
                 </div>
             </div>

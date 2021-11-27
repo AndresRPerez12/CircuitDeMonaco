@@ -14,8 +14,8 @@ body { /* estilos generales para el cuerpo de la página */
     background-image: url(../images/tunnel.png);    /* fijar imagen de fondo desde un archivo */ 
     background-repeat:no-repeat;
     background-size:cover;
-    background-position: center 55%;    /* escoger que parte de la imagen se muestra  */ 
-    position: relative;                 /* posición relativa a su posición estática usual  */ 
+    background-position: center 55%;    /* escoger que parte de la imagen se muestra */ 
+    position: relative;                 /* posición relativa a su posición estática usual */ 
     padding-top: 10px;
     padding-bottom: 200px;  
 }
@@ -44,11 +44,11 @@ body { /* estilos generales para el cuerpo de la página */
     margin-bottom: 50px;
 }
 
-a.title-link {
+a.title-link {     /* estilos del link del título principal */
     color: #ebebeb;
     text-decoration: none;
 }
-a.title-link:visited {
+a.title-link:visited {       /* estilos del link del título principal */
     color: #ebebeb;
     text-decoration: none;
 }
@@ -72,7 +72,7 @@ a.title-link:hover {    /* estilo cuando el cursor está sobre el link */
     margin: 20px 0;
 }
 
-.subpage-subtitle{
+.subpage-subtitle{  /* estilos para los subtítulos de cada página en el contendor principal */ 
     color: #131212;
     font-size: 9mm;
     margin: 20px 0;
@@ -84,7 +84,11 @@ a.boton-menu:visited {  /* estilos para los botones principales del menú cuando
     color: #a50202;
 }
 
-a.boton-submenu:visited {  /* estilos para los botones principales del menú cuando el link ya ha sido visitado */ 
+a.boton-submenu:visited {  /* estilos para los botones cuando el link ya ha sido visitado */ 
+    color: #ffffff;
+}
+
+a.boton-map-title:visited {  /* estilos para los botones cuando el link ya ha sido visitado */ 
     color: #ffffff;
 }
 
@@ -164,32 +168,32 @@ a.boton-submenu:visited {  /* estilos para los botones principales del menú cua
 
 /******************************* MENÚ DESPLEGABLE **********************/
 
-#menu-toggle {
-    display: none;   /* oculta el checkbox cuando no es necesario*/
+#menu-toggle {    /* estilos del checkbox */
+    display: none;    /* oculta el checkbox cuando no es necesario */
 }
 
-.menu ul{
+.menu ul{    /* estilos de la lista del menú desplegable */
     list-style: none;     /* para evitar los bullit list en la lista*/
     padding: 0;
     display: flex;
-    gap: 10px;
-    justify-content: center;
+    gap: 10px;    /* espacio entre los elementos en un flexbox */
+    justify-content: center;    /* centra los elementos de un flexbox */
 }
 
-.menu li{
+.menu li{    /* estilos de los elementos de la lista del menú desplegable */
     width: 160px;
     height: 30px;
     text-decoration: none; 
     margin: 10px 0;
 } 
 
-.menu li a {
+.menu li a {    /* estilos de los links en la lista desplegable */
     display: block;
     text-decoration: none;    
     padding-top:6px;  
 }
 
-header {
+header {    /* header que contiene los botones y el menú desplegable */
     width: 100%;
 	z-index: 30;	/* coloca el checkbox por encima del contenido*/
 }
@@ -198,8 +202,8 @@ header label {     /* coloca el checkbox en un lugar y tamaño exactos*/
     display: none;
     width: 30px;
     height: 30px;
-    position: fixed;
-    left: 20px;
+    position: fixed;    /* queda fijo en la pantalla independiente del scroll */
+    left: 20px;    /* coordenadas exactas del checkbox */
     top: 20px;
     background: rgba(0, 0, 0, 0.5);
     border-radius: 6px;
@@ -209,20 +213,21 @@ header label:hover {
     cursor: pointer;    /* cambia el cursor sobre el checkbox para indicar la interacción*/
 }
 
-.menu .nav-subsection{
+.menu .nav-subsection{    /* oculta los botones de navegacion internos de cada página cuando el menú desplegable no está disponible */
     display: none;
 }
 
 /* cuando la ventana mida menos de 1200px (tableta o teléfono) */
+/* estilos para mostrar el checkbox y el menú desplegable */
 @media only screen and (max-width: 1200px) {
     header label{
         display: block; /* se muestra el checkbox cuando se reduce la ventana*/
         z-index: 30;
     }
 
-    .menu {
+    .menu {    /* estilos del menú desplegable */
         position: fixed;  /* sostiene la posición aunque se haga scroll en el contenido */
-        top: 60px;
+        top: 60px;      /* coordenadas específicas */
         left: 20px;
         background: rgba(0, 0, 0, 0.5); 
         border-radius: 6px;
@@ -233,15 +238,15 @@ header label:hover {
         transition: all 1s;   /* la animación de desplegar el menu dura 1 segundo*/
     } 
 
-    .menu.double-menu{
+    .menu.double-menu{    /* configura el ancho del fondo del menú cuando tiene botones de navegación interna */
         width: 290px; /* se refiere al ancho del fondo del menu y no a los botones */
     }
 
-    .double-menu .boton-menu{
+    .double-menu .boton-menu{    /* configura el ancho de los botones del menú desplegable cuando tiene botones de navegación interna  */
         min-width: 250px;
     }
 
-    .menu ul {
+    .menu ul {    /* estilos de la lista del menú desplegable */
         flex-direction: column;  /* se despliega en sentido vertical*/
         margin-left: 20px; 
     } 
@@ -250,11 +255,11 @@ header label:hover {
         margin: 1px; 
     } 
 
-    .menu .nav-subsection{
+    .menu .nav-subsection{    /* muestra los botones de navegación interna de la página cuando se usa el menú desplegable */
         display: block;
     }
 
-    .inner-nav .boton-submenu{
+    .inner-nav .boton-submenu{    /* oculta los botones de navegación interna en el contenedor principal cuando se usa el menú desplegable */
         display: none;
     }
 
@@ -361,25 +366,25 @@ a:hover{
 
 /******************************* MAPA DEL SITIO **********************/
 
-.site-map-button.boton-map-title{
+.site-map-button.boton-map-title{    /* estilos para los botones cuando están en el mapa del sitio */
     min-width: 0;
-    width: 100%;
+    width: 100%;    /* permite que el ancho dependa de las clases de bootstrap aplicadas */
     margin: 5px 0;
 }
 
-.site-map-button.boton-menu{
+.site-map-button.boton-menu{    /* estilos para los botones cuando están en el mapa del sitio */
     min-width: 0;
-    width: 100%;
+    width: 100%;    /* permite que el ancho dependa de las clases de bootstrap aplicadas */
     margin: 5px 0;
 }
 
-.site-map-button.boton-submenu{
+.site-map-button.boton-submenu{    /* estilos para los botones cuando están en el mapa del sitio */
     min-width: 0;
-    width: 100%;
+    width: 100%;    /* permite que el ancho dependa de las clases de bootstrap aplicadas */
     margin: 5px 0;
 }
 
-.map-container{
+.map-container{    /* estilos para el fondo del mapa del sitio */
     background-color: rgba(0, 0, 0, 0.5);
     padding-top: 10px;
     padding-bottom: 10px;
