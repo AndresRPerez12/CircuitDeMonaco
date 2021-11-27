@@ -78,9 +78,7 @@ a.title-link:hover {    /* estilo cuando el cursor está sobre el link */
     margin: 20px 0;
 }
 
-/******************************* BOTONES Y NAVBAR **********************/
-
-
+/******************************* BOTONES **********************/
 
 a.boton-menu:visited {  /* estilos para los botones principales del menú cuando el link ya ha sido visitado */ 
     color: #ffffff;
@@ -97,9 +95,9 @@ a.boton-menu:visited {  /* estilos para los botones principales del menú cuando
 	color:#ffffff;
 	font-size:17px;
 	padding:7px 25px;
-	text-decoration:none;
 	text-shadow:0px 1px 0px #810e05;
     text-decoration: none;
+    min-width: 160px;
 }
 .boton-menu:hover {     /* estilos para los botones del menú, generados en https://www.bestcssbuttongenerator.com/ */
 	background:linear-gradient(to bottom, #f24437 5%, #a50202 100%);
@@ -110,6 +108,81 @@ a.boton-menu:visited {  /* estilos para los botones principales del menú cuando
 .boton-menu:active {    /* estilos para los botones del menú, generados en https://www.bestcssbuttongenerator.com/ */
 	position:relative;
 	top:1px;
+}
+
+/******************************* MENÚ DESPLEGABLE **********************/
+
+#menu-toggle {
+    display: none;   /* oculta el checkbox cuando no es necesario*/
+}
+
+.menu ul{
+    list-style: none;     /* para evitar los bullit list en la lista*/
+    padding: 0;
+    display: flex;
+}
+
+.menu li{
+    width: 160px;
+    height: 30px;
+    text-decoration: none; 
+    margin: 10px 0;
+} 
+
+.menu li a {
+    display: block;
+    text-decoration: none;    
+    padding-top:6px;    
+}
+
+header {
+    width: 100%;
+	z-index: 10;	/* coloca el checkbox por encima del contenido*/
+}
+
+.menu ul{
+    justify-content: center;
+}
+
+header label {     /* coloca el checkbox en un lugar y tamaño exactos*/
+    display: none;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 20px;
+    top: 30px;
+} 
+
+header label:hover {
+    cursor: pointer;    /* cambia el cursor sobre el checkbox para indicar la interacción*/
+}
+
+/* cuando la ventana mida menos de 1200px */
+@media only screen and (max-width: 1200px) {
+    header label{
+        display: block; /* se muestra el checkbox cuando se reduce la ventana*/
+    }
+
+    .menu {
+        position: fixed;  /* sostiene la posición aunque se haga scroll en el contenido */
+        background: rgba(0, 0, 0, 0.5); /* rojo, verde, azul, alpha (transparencia) */
+		z-index: 30; /* para asegurar que el menu esta por encima de todo lo demás*/
+        width: 40%; /* se refiere al ancho del fondo del menu y no a los botones */
+        margin-left: -60%; /* se oculta porque se coloca por fuera de la ventana*/
+		margin-top: 4px;
+        transition: all 1s;   /* la animación de desplegar el menu dura 1 segundo*/
+        width: 200px;
+    } 
+
+    .menu ul {
+        flex-direction: column;  /* se despliega en sentido vertical*/
+        margin-left: 20px; 
+    } 
+
+    #menu-toggle:checked ~ .menu {  /* el checkbox controla las dos posiciones del menu */
+        margin: 1px; 
+    } 
+
 }
 
 /******************************* ELEMENTOS CONTENEDOR INFERIOR **********************/
