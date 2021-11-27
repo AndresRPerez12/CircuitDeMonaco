@@ -189,7 +189,7 @@ header label:hover {
     display: none;
 }
 
-/* cuando la ventana mida menos de 1200px */
+/* cuando la ventana mida menos de 1200px (tableta o teléfono) */
 @media only screen and (max-width: 1200px) {
     header label{
         display: block; /* se muestra el checkbox cuando se reduce la ventana*/
