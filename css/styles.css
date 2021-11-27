@@ -138,6 +138,30 @@ a.boton-submenu:visited {  /* estilos para los botones principales del menú cua
 	top:1px;
 }
 
+.boton-map-title { /* estilos para los botones del menú, generados en https://www.bestcssbuttongenerator.com/ */
+	background:linear-gradient(to bottom, #131212 5%, #333232 100%);
+	background-color:#131212;
+	border-radius:6px;
+	border:3px solid #131212;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:17px;
+	font-weight:bold;
+	padding:7px 25px;
+	text-decoration:none;
+}
+.boton-map-title:hover { /* estilos para los botones del menú, generados en https://www.bestcssbuttongenerator.com/ */
+	background:linear-gradient(to bottom, #333232 5%, #131212 100%);
+	background-color:#131212;
+	color: #ffffff;
+	text-decoration: none;
+}
+.boton-map-title:active { /* estilos para los botones del menú, generados en https://www.bestcssbuttongenerator.com/ */
+	position:relative;
+	top:1px;
+}
+
 /******************************* MENÚ DESPLEGABLE **********************/
 
 #menu-toggle {
@@ -230,7 +254,7 @@ header label:hover {
         display: block;
     }
 
-    .main_container .boton-submenu{
+    .inner-nav .boton-submenu{
         display: none;
     }
 
@@ -333,6 +357,32 @@ a:hover{
 .winner-text{       /* estilos para el texto sobre los ganadores en Mónaco */
     font-size: 7mm;
     font-weight: bold;
+}
+
+/******************************* MAPA DEL SITIO **********************/
+
+.site-map-button.boton-map-title{
+    min-width: 0;
+    width: 100%;
+    margin: 5px 0;
+}
+
+.site-map-button.boton-menu{
+    min-width: 0;
+    width: 100%;
+    margin: 5px 0;
+}
+
+.site-map-button.boton-submenu{
+    min-width: 0;
+    width: 100%;
+    margin: 5px 0;
+}
+
+.map-container{
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 /******************************* CRÉDITOS **********************/
