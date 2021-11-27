@@ -42,7 +42,7 @@
             <input type="checkbox" id="menu-toggle"><!-- checkbox permite la opción boleana -->
             <label for="menu-toggle"><img src="images/menu-toggle.png" width="30px"></label>
             <!-- la imagen del ícono se muestra como label del checkbox pero se oculta cuando no se necesita -->
-            <nav class="menu">
+            <nav class="menu double-menu">
                 <ul>
                     <!-- los botones son elementos de una lista que define el menu pero mantiene el mismo diseño de cada botón, la posición de esta lista depende del estado del checkbox-->
                     <li><a href="ubicacion.html" target="_self" class="boton-menu">Ubicación</a></li>
@@ -50,6 +50,10 @@
                     <li><a href="actividades.html" target="_self" class="boton-menu">Actividades</a></li>
                     <li><a href="historia.html" target="_self" class="boton-menu">Historia</a></li>
                     <li><a href="creditos.html" target="_self" class="boton-menu">Créditos</a></li>
+                    <li class="nav-subsection"><a href="#ubicacion-section" target="_self" class="boton-submenu">Ubicación del circuito</a></li>
+                    <!-- botón que lleva a una sección diferente dentro de la misma página -->
+                    <li class="nav-subsection"><a href="#track-section" target="_self" class="boton-submenu">¿Cómo es el circuito?</a></li>
+                    <!-- botón que lleva a una sección diferente dentro de la misma página -->
                 </ul>
             </nav>
         </header>
@@ -59,9 +63,9 @@
         <div class="container-fluid">
             <nav>
                 <!-- menu de navegación interno para esta página específica -->
-                <a href="#ubicacion-section" target="_self" class="boton-menu">Ubicación del circuito</a>
+                <a href="#ubicacion-section" target="_self" class="boton-submenu">Ubicación del circuito</a>
                 <!-- botón que lleva a una sección diferente dentro de la misma página -->
-                <a href="#track-section" target="_self" class="boton-menu">¿Cómo es el circuito?</a>
+                <a href="#track-section" target="_self" class="boton-submenu">¿Cómo es el circuito?</a>
                 <!-- botón que lleva a una sección diferente dentro de la misma página -->
             </nav>
             <h2 class="subpage-title" id="ubicacion-section">Ubicación del circuito</h2> <!-- título de la página específica -->
