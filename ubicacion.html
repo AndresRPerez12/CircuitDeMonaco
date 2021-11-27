@@ -36,14 +36,23 @@
                 </div>
             </div>
             <!-- menu principal de navegación -->
-            <nav>
-                <a href="ubicacion.html" target="_self" class="boton-menu">Ubicación</a>
-                <a href="habitantes.html" target="_self" class="boton-menu">Habitantes</a>
-                <a href="actividades.html" target="_self" class="boton-menu">Actividades</a>
-                <a href="historia.html" target="_self" class="boton-menu">Historia</a>
-                <a href="creditos.html" target="_self" class="boton-menu">Créditos</a>
-            </nav>
         </div>
+        <header>
+            <!-- el elemento header incluye el menu desplegable y el ícono que lo despliega -->
+            <input type="checkbox" id="menu-toggle"><!-- checkbox permite la opción boleana -->
+            <label for="menu-toggle"><img src="images/menu-toggle.png" width="30px"></label>
+            <!-- la imagen del ícono se muestra como label del checkbox pero se oculta cuando no se necesita -->
+            <nav class="menu">
+                <ul>
+                    <!-- los botones son elementos de una lista que define el menu pero mantiene el mismo diseño de cada botón, la posición de esta lista depende del estado del checkbox-->
+                    <li><a href="ubicacion.html" target="_self" class="boton-menu">Ubicación</a></li>
+                    <li><a href="habitantes.html" target="_self" class="boton-menu">Habitantes</a></li>
+                    <li><a href="actividades.html" target="_self" class="boton-menu">Actividades</a></li>
+                    <li><a href="historia.html" target="_self" class="boton-menu">Historia</a></li>
+                    <li><a href="creditos.html" target="_self" class="boton-menu">Créditos</a></li>
+                </ul>
+            </nav>
+        </header>
     </div>
 
     <div class="main_container"> <!-- sección central que cambia en cada página -->
