@@ -392,6 +392,13 @@ a:hover{
 
 /******************************* MAPA INTERACTIVO **********************/
 
+.interactive_map{   /* estilos para el div del mapa interactivo */
+    position:relative;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 .map-image{   /* estilos para la imagen de fondo del mapa interactivo */
     width: 100%;
     margin: 20px 0;
@@ -407,7 +414,7 @@ a:hover{
 	color:#ffffff;
 	font-family:Arial;
 	font-size:17px;
-	padding:15px 27px;
+	padding:5px 5px;
 	text-decoration:none;
 }
 .boton-mapa:hover {   /* estilos generales los botones del mapa interactivo, generados en https://www.bestcssbuttongenerator.com/ */
@@ -416,27 +423,24 @@ a:hover{
 	color: #ffffff;
 	text-decoration: none;
 }
-.boton-mapa:active {   /* estilos generales los botones del mapa interactivo, generados en https://www.bestcssbuttongenerator.com/ */
-	top:1px;
-}
 
 .section-image{   /* estilos para la imagen de la sección de la pista */
     width: 100%;
     margin: 10px 0;
 }
 
-.section-video{   /* estilos para la imagen de la sección de la pista */
+.section-video{   /* estilos para el video de la sección de la pista */
     width: 100%;
-    aspect-ratio: 16 / 9;
+    aspect-ratio: 16 / 9; /* para determinar la altura a partir del ancho */
     margin: 10px 0;
 }
 
 .punto-1{      /* estilos y posición para un botón específico del mapa interactivo */
     position:absolute;
 	z-index:2;
-    width:4%;
-    top:4%;
-	left:58%;
+    padding: 5px 10px;
+    top: 26%;
+	left: 25%;
 }
 
 
