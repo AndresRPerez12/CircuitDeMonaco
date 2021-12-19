@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
     <link rel="stylesheet" href="css/styles.css"> <!-- especificar hoja de estilos propia al final para mayor jerarquía -->
+    <script src="js/map-button-functions.js"></script>
 </head>
 
 <body>
@@ -62,24 +63,24 @@
             <!-- imagen desde un archivo, el fondo del mapa interactivo -->
             <img class="map-image" src="images/interactive-map/map_background.svg" alt="Mapa de fondo del circuito"> 
             <!-- botones del mapa interactivo -->
-            <a href="#interactive-map-title" target="_self" class="boton-mapa restart" id="boton-restart">Reinciar</a>
-            <a href="#map-section-title" target="_self" class="boton-mapa turn-1" id="boton-t1">C1</a>
-            <a href="#map-section-title" target="_self" class="boton-mapa turn-2" id="boton-t2">C2</a>
-            <a href="#map-section-title" target="_self" class="boton-mapa turn-3" id="boton-t3">C3</a>
-            <a href="#map-section-title" target="_self" class="boton-mapa turn-4" id="boton-t4">C4</a>
-            <a href="#map-section-title" target="_self" class="boton-mapa turn-5" id="boton-t5">C5</a>
-            <a href="#map-section-title" target="_self" class="boton-mapa turn-6" id="boton-t6">C6</a>
-            <a href="#map-section-title" target="_self" class="boton-mapa turn-7" id="boton-t7">C7</a>
-            <a href="#map-section-title" target="_self" class="boton-mapa turn-8" id="boton-t8">C8</a>
-            <a href="#map-section-title" target="_self" class="boton-mapa turn-9" id="boton-t9">C9</a>
-            <a href="#map-section-title" target="_self" class="boton-mapa turn-10" id="boton-t10">C10-11</a>
-            <a href="#map-section-title" target="_self" class="boton-mapa turn-12" id="boton-t12">C12</a>
-            <a href="#map-section-title" target="_self" class="boton-mapa turn-13" id="boton-t13">C13-14</a>
-            <a href="#map-section-title" target="_self" class="boton-mapa turn-15" id="boton-t15">C15-16</a>
-            <a href="#map-section-title" target="_self" class="boton-mapa turn-17" id="boton-t17">C17</a>
-            <a href="#map-section-title" target="_self" class="boton-mapa turn-18" id="boton-t18">C18-19</a>
-            <a href="#map-section-title" target="_self" class="boton-mapa start-straight" id="boton-straight">Recta</a>
-            <a href="#map-section-title" target="_self" class="boton-mapa pits" id="boton-pits">Pits</a>
+            <a href="#interactive-map-title" target="_self" class="boton-mapa restart" id="boton-restart" onclick="clickRestart()">Reinciar</a>
+            <a href="#map-section-title" target="_self" class="boton-mapa turn-1" id="boton-t1" onclick="clickT1()">C1</a>
+            <a href="#map-section-title" target="_self" class="boton-mapa turn-2" id="boton-t2" onclick="clickT2()">C2</a>
+            <a href="#map-section-title" target="_self" class="boton-mapa turn-3" id="boton-t3" onclick="clickT3()">C3</a>
+            <a href="#map-section-title" target="_self" class="boton-mapa turn-4" id="boton-t4" onclick="clickT4()">C4</a>
+            <a href="#map-section-title" target="_self" class="boton-mapa turn-5" id="boton-t5" onclick="clickT5()">C5</a>
+            <a href="#map-section-title" target="_self" class="boton-mapa turn-6" id="boton-t6" onclick="clickT6()">C6</a>
+            <a href="#map-section-title" target="_self" class="boton-mapa turn-7" id="boton-t7" onclick="clickT7()">C7</a>
+            <a href="#map-section-title" target="_self" class="boton-mapa turn-8" id="boton-t8" onclick="clickT8()">C8</a>
+            <a href="#map-section-title" target="_self" class="boton-mapa turn-9" id="boton-t9" onclick="clickT9()">C9</a>
+            <a href="#map-section-title" target="_self" class="boton-mapa turn-10" id="boton-t10" onclick="clickT10()">C10-11</a>
+            <a href="#map-section-title" target="_self" class="boton-mapa turn-12" id="boton-t12" onclick="clickT12()">C12</a>
+            <a href="#map-section-title" target="_self" class="boton-mapa turn-13" id="boton-t13" onclick="clickT13()">C13-14</a>
+            <a href="#map-section-title" target="_self" class="boton-mapa turn-15" id="boton-t15" onclick="clickT15()">C15-16</a>
+            <a href="#map-section-title" target="_self" class="boton-mapa turn-17" id="boton-t17" onclick="clickT17()">C17</a>
+            <a href="#map-section-title" target="_self" class="boton-mapa turn-18" id="boton-t18" onclick="clickT18()">C18-19</a>
+            <a href="#map-section-title" target="_self" class="boton-mapa start-straight" id="boton-straight" onclick="clickRecta()">Recta</a>
+            <a href="#map-section-title" target="_self" class="boton-mapa pits" id="boton-pits" onclick="clickPits()">Pits</a>
         </div>
         <div class="container-fluid">  <!-- contenedor de boostrap que utiliza el 100% del ancho de la pantalla -->
             <div class="row justify-content-center">
