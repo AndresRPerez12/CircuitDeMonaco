@@ -57,8 +57,40 @@
     </div>
 
     <div class="main_container"> <!-- sección central que cambia en cada página -->
+        <h2 class="subpage-title">Mapa Interactivo del Circuito</h2> <!-- Sección del Mapa de Navegación -->
         <div class="container-fluid">  <!-- contenedor de boostrap que utiliza el 100% del ancho de la pantalla -->
-            aa
+            <div class="row justify-content-center">
+                <div class="col-12 col-xl-11">
+                    <img class="map-image" src="images/interactive-map/map_background.svg" alt="Mapa de fondo del circuito"> <!-- imagen desde un archivo -->
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <h2 class="subpage-subtitle" id="map-section-title">Uso del mapa interactivo</h2> <!-- subtítulo de la página específica -->
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-11 col-xl-5 align-self-center">
+                    <p class="table-text" id="map-section-text">
+                        Este es un mapa interactivo del circuito de Mónaco. Cada uno de los botones del mapa te mostrará mas información de esta sección de la pista, junto a una foto del lugar y un video de un acontecimiento que se ha dado en esa parte de la pista a lo largo de su historia en la Fórmula 1. ¡Toca cualquiera de los botones en el mapa para comenzar!
+                    </p>
+                </div>
+                <div class="col-12 col-md-10 col-xl-7 align-self-center">
+                    <img class="section-image" id="map-section-image" src="images/interactive-map/general.webp" alt="Imagen de la seccion"> <!-- imagen desde un archivo -->
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-11 col-xl-5 align-self-center">
+                    <p class="table-text" id="map-section-description">
+                        Descripción general del circuito:
+                    </p>
+                </div>
+                <div class="col-12 col-md-10 col-xl-7">
+                    <iframe class="section-video" id="map-section-video"
+                        src="https://www.youtube.com/embed/lOiOlXkPE5M?start=14" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
         </div>
     </div>
 
