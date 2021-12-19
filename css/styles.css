@@ -441,6 +441,13 @@ a:hover{
     margin: 10px 0;
 }
 
+.restart{      /* estilos y posición para el botón de reincio */
+    position:absolute;
+	z-index:2;
+    top: 5%;
+	left: 5%;
+}
+
 .turn-1{      /* estilos y posición para un botón específico del mapa interactivo */
     position:absolute;
 	z-index:2;
@@ -553,7 +560,7 @@ a:hover{
 	left: 14%;
 }
 
-.pit{      /* estilos y posición para un botón específico del mapa interactivo */
+.pits{      /* estilos y posición para un botón específico del mapa interactivo */
     position:absolute;
 	z-index:2;
     top: 53%;
