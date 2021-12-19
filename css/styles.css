@@ -414,14 +414,20 @@ a:hover{
 	color:#ffffff;
 	font-family:Arial;
 	font-size:17px;
-	padding:5px 5px;
 	text-decoration:none;
+    padding: 5px 5px;
 }
 .boton-mapa:hover {   /* estilos generales los botones del mapa interactivo, generados en https://www.bestcssbuttongenerator.com/ */
 	background:linear-gradient(to bottom, #a83737 5%, #a50202 100%);
 	background-color:#a83737;
 	color: #ffffff;
 	text-decoration: none;
+}
+
+@media only screen and (max-width: 800px){ /* reducir el tamaño de la letra de los botones del mapa en pantalla de celular */
+    .boton-mapa{
+        font-size:12px;
+    }
 }
 
 .section-image{   /* estilos para la imagen de la sección de la pista */
@@ -435,14 +441,124 @@ a:hover{
     margin: 10px 0;
 }
 
-.punto-1{      /* estilos y posición para un botón específico del mapa interactivo */
+.turn-1{      /* estilos y posición para un botón específico del mapa interactivo */
     position:absolute;
 	z-index:2;
-    padding: 5px 10px;
     top: 26%;
 	left: 25%;
 }
 
+.turn-2{      /* estilos y posición para un botón específico del mapa interactivo */
+    position:absolute;
+	z-index:2;
+    top: 32%;
+	left: 47.7%;
+}
+
+.turn-3{      /* estilos y posición para un botón específico del mapa interactivo */
+    position:absolute;
+	z-index:2;
+    top: 34%;
+	left: 64%;
+}
+
+.turn-4{      /* estilos y posición para un botón específico del mapa interactivo */
+    position:absolute;
+	z-index:2;
+    top: 24%;
+	left: 68%;
+}
+
+.turn-5{      /* estilos y posición para un botón específico del mapa interactivo */
+    position:absolute;
+	z-index:2;
+    top: 9%;
+	left: 76%;
+}
+
+.turn-6{      /* estilos y posición para un botón específico del mapa interactivo */
+    position:absolute;
+	z-index:2;
+    top: 23%;
+	left: 78%;
+}
+
+.turn-7{      /* estilos y posición para un botón específico del mapa interactivo */
+    position:absolute;
+	z-index:2;
+    top: 13%;
+	left: 83%;
+}
+
+.turn-8{      /* estilos y posición para un botón específico del mapa interactivo */
+    position:absolute;
+	z-index:2;
+    top: 23%;
+	left: 88%;
+}
+
+.turn-9{      /* estilos y posición para un botón específico del mapa interactivo */
+    position:absolute;
+	z-index:2;
+    top: 45%;
+	left: 73%;
+}
+
+.turn-10{      /* estilos y posición para un botón específico del mapa interactivo */
+    position:absolute;
+	z-index:2;
+    top: 47%;
+	left: 45%;
+}
+
+.turn-12{      /* estilos y posición para un botón específico del mapa interactivo */
+    position:absolute;
+	z-index:2;
+    top: 36%;
+	left: 30%;
+}
+
+.turn-13{      /* estilos y posición para un botón específico del mapa interactivo */
+    position:absolute;
+	z-index:2;
+    top: 47%;
+	left: 28%;
+}
+
+.turn-15{      /* estilos y posición para un botón específico del mapa interactivo */
+    position:absolute;
+	z-index:2;
+    top: 60%;
+	left: 25%;
+}
+
+.turn-17{      /* estilos y posición para un botón específico del mapa interactivo */
+    position:absolute;
+	z-index:2;
+    top: 80%;
+	left: 24%;
+}
+
+.turn-18{      /* estilos y posición para un botón específico del mapa interactivo */
+    position:absolute;
+	z-index:2;
+    top: 74%;
+	left: 10%;
+}
+
+.start-straight{      /* estilos y posición para un botón específico del mapa interactivo */
+    position:absolute;
+	z-index:2;
+    top: 44%;
+	left: 14%;
+}
+
+.pit{      /* estilos y posición para un botón específico del mapa interactivo */
+    position:absolute;
+	z-index:2;
+    top: 53%;
+	left: 18%;
+}
 
 /******************************* CRÉDITOS **********************/
 
