@@ -8,6 +8,10 @@ body { /* estilos generales para el cuerpo de la página */
     color: #131212;
 }
 
+html {  /* los links a la página actual tendran la animación de scroll */ 
+    scroll-behavior: smooth; 
+  }
+
 /******************************* CONTENEDORES **********************/
 
 .top_container{ /* estilos del contenedor superior que se mantiene en todas las páginas */ 
