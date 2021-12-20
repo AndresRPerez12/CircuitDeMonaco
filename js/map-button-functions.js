@@ -24,7 +24,7 @@ function clickT1(){
     video_description = document.getElementById("map-section-description");
     // Modificar el contenido usando las variables
     title.innerHTML = "Curva 1: Sainte Devote";
-    text.innerHTML = "Pronunciada curva a la izquierda. Nombrada por una pequeña iglesia atras de la primera curva, suele ser un punto importante de acción en la primera vuelta de carrera al representar una de las pocas oportunidades de adelantamiento. Tiene la salida de los pits por su interior y una escapatoria para los pilotos que se pasen de frenada al entrar a la curva.";
+    text.innerHTML = "Pronunciada curva a la derecha. Nombrada por una pequeña iglesia atras de la primera curva, suele ser un punto importante de acción en la primera vuelta de carrera al representar una de las pocas oportunidades de adelantamiento. Tiene la salida de los pits por su interior y una escapatoria para los pilotos que se pasen de frenada al entrar a la curva.";
     image.src = "images/interactive-map/turn-1.jpg";
     video.src = "https://www.youtube.com/embed/Ce4r2nSnmyU?start=10";
     video_description.innerHTML = "En 2015, Max Verstappen tuvo un fuerte accidente en esta curva tratando de pasar al Lotus de Romain Grosjean, mostrando lo estrecho que es el circuito y los riesgos de tratar de adelantar en las calles del principado."
@@ -101,8 +101,8 @@ function clickT6(){
     title.innerHTML = "Curva 6: Horquilla del gran hotel";
     text.innerHTML = "Horquilla muy cerrada hacia la izquierda. Es una de las curvas más reconocibles del cicuito. Su nombre ha cambiado muchas veces junto con el nombre del hotel adyacente. Se le considera la curva más lenta de toda la temporada";
     image.src = "images/interactive-map/turn-6.jpg";
-    video.src = "aaaaaa";
-    video_description.innerHTML = "aaaaaa"
+    video.src = "https://www.youtube.com/embed/i3U9aBg0W_E";
+    video_description.innerHTML = "En las primeras vueltas se suele poner muy apretado el paso por la horquilla al estar tan cerca las autos. Por ejemplo así fue el paso en la vuelta 1 del gran premio de 2013."
 }
 
 function clickT7(){
@@ -146,8 +146,8 @@ function clickT9(){
     title.innerHTML = "Curva 9: El túnel";
     text.innerHTML = "Más que una curva, es una recta un poco inclinada. Al estar cubierta suele tener condiciones diferentes al resto de circuito. Los pilotos suelen preparar los adelantamientos desde el túnel dado que a su salida está una de las pocas oprtunidades de pasar.";
     image.src = "images/interactive-map/turn-9.jpg";
-    video.src = "aaaaaa";
-    video_description.innerHTML = "aaaaaa"
+    video.src = "https://www.youtube.com/embed/RtzyI5fbiAc";
+    video_description.innerHTML = "En 2004 en esta curva ocurrió un extraño accidente entre Michael Schumacher y Juan Pablo Montoya, en condiciones de Safety Car."
 }
 
 function clickT10(){
@@ -206,8 +206,8 @@ function clickT15(){
     title.innerHTML = "Curvas 15 y 16: Salida del complejo de la piscina";
     text.innerHTML = "La chicana de las curvas 15 y 16 es mucho más cerrada que la anterior. Los pilotos suelen ir al límite en esta zona, pasando lo más cerca que pueden de las protecciones laterales para sacar provecho de toda el espacio posible y ganar tiempo. Es por esto que muchos accidentes suelen ocurrir en estas curvas.";
     image.src = "images/interactive-map/turn-15.png";
-    video.src = "aaaaaa";
-    video_description.innerHTML = "aaaaaa"
+    video.src = "https://www.youtube.com/embed/ani7FaCFaUk";
+    video_description.innerHTML = "Los piltos a veces pasan a milimetros de las protecciones, como se puede ver en este caso con Sergio Pérez y su Red Bull en 2021."
 }
 
 function clickT17(){
@@ -266,6 +266,6 @@ function clickPits(){
     title.innerHTML = "Zona de pits";
     text.innerHTML = "En la zona de pits es donde los mecánicos de los equipos trabajan en los autos, y en donde se realizan los cambios de neumáticos durante la carrera. La entrada a los pits en este circuito se encuentra antes de la curva 19, y la salida pasa por dentro de la curva 1 y va a dar a la curva 2.";
     image.src = "images/interactive-map/pits.webp";
-    video.src = "aaaaaa";
-    video_description.innerHTML = "aaaaaa"
+    video.src = "https://www.youtube.com/embed/hvA36U1ed4Q";
+    video_description.innerHTML = "Al ser tan difícil pasar en este circuito, las carreras muchas veces se deciden por la estrategia en las paradas en pits, y los errores en la parada pueden ser muy caros. Esto le paso a Daniel Ricciardo en 2016, cuando una falta de coordinación de su equipo le costo la victoria y contra Lewis Hamilton."
 }
