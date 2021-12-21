@@ -131,8 +131,8 @@ function clickT8(){
     title.innerHTML = "Curva 8: Portier";
     text.innerHTML = "Es una curva a derecha de velocidad media que lleva hacia el túnel. Su nombre viene del barrio de Mónaco adyacente al mar. El nombre del barrio viene del nivel más bajo de una antigua orden católica.";
     image.src = "images/interactive-map/turn-8.jpg";
-    video.src = "aaaaaa";
-    video_description.innerHTML = "aaaaaa"
+    video.src = "https://www.youtube.com/embed/9s8X-vfFiC4";
+    video_description.innerHTML = "Al ser tan estrecha la curva, es muy complicado que dos autos puedan pasar a la vez. En la carrera de 2017, se tocaron Jenson Button y Pascal Werhlein entrado a esta curva durante la carrera."
 }
 
 function clickT9(){
@@ -161,8 +161,8 @@ function clickT10(){
     title.innerHTML = "Curvas 10 y 11: Nouvelle Chicane";
     text.innerHTML = "Siempre ha habido una chicana en esta parte del circuito. Es 'nueva' desde su remodelación en 1986. La mayoría de intentos de adelantamientos se dan en la fuerte frenada antes de la curva 10.";
     image.src = "images/interactive-map/turn-10.jpg";
-    video.src = "aaaaaa";
-    video_description.innerHTML = "aaaaaa"
+    video.src = "https://www.youtube.com/embed/mH2k4XcigXk?start=29";
+    video_description.innerHTML = "La chicana es uno de los pocos puntos del circuito donde es posible adelantar. En 2018, Max Verstappen pudo adelantar a Lance Stroll y a Carlos Sainz entrando a esta sección."
 }
 
 function clickT12(){
@@ -221,8 +221,8 @@ function clickT17(){
     title.innerHTML = "Curva 17: La Rascasse";
     text.innerHTML = "Es una cerrada curva a la izquierda que requiere de una frenada fuerte. Su nombre viene de un pez cubierto de espinas que habita el Mediterraneo. Se rumora que antiguamente había un bar con este nombre en la zona y que de allí viene la denominación del lugar. Hoy en día existe un restaurante nuevo con el mismo nombre dentro de la curva.";
     image.src = "images/interactive-map/turn-18.jpg";
-    video.src = "aaaaaa";
-    video_description.innerHTML = "aaaaaa"
+    video.src = "https://www.youtube.com/embed/VgCY548M2QQ?start=15";
+    video_description.innerHTML = "En 2006, se dió una gran polémica en esta curva. Durante la clasificación, Michael Schumacher tenía el mejor tiempo, y en su siguiente intento, tomó mal la curva y se quedó estacionado, causando banderas amarillas y así impididendo que sus rivales pusieran mejorar sus tiempos. En consecuencia, Schumacher fue descalificado de la clasificación y tuvo que empezar la carrera del domingo desde la última posición."
 }
 
 function clickT18(){
@@ -236,8 +236,8 @@ function clickT18(){
     title.innerHTML = "Curvas 18 y 19: Virage Antony Noghes";
     text.innerHTML = "La última curva del circuito es un giro a la derecha con una salida ligeramente hacia la izquierda. Antiguamente, la curva final era otra horquilla, hasta su rediseño en la década de los 70s. Fue nombrada en honor a Antony Noghes, el fundador del Gran Premio de Mónaco. Desde esta curva los autos salen recto hacía la línea de meta para iniciar una nueva vuelta.";
     image.src = "images/interactive-map/turn-19.jpg";
-    video.src = "aaaaaa";
-    video_description.innerHTML = "aaaaaa"
+    video.src = "https://www.youtube.com/embed/kL9BLSqwkmQ";
+    video_description.innerHTML = "En 2010, la carrera acabó en condiciones de Safety Car. Michael Schumacher y su equipo crerían que las última curva contaba como bandera verde y podían adelantar, por lo que Michael pasó a Fernando Alonso en la ultima curva de la última vuelta. Al final, su adelantamiento fue considerado ilegal y fue penalizado con 20 segundos."
 }
 
 function clickStraight(){
@@ -251,8 +251,8 @@ function clickStraight(){
     title.innerHTML = "Recta Principal";
     text.innerHTML = "Desde la recta principal del circuito inician todos los autos la carrera. Es de las pocas zonas de aceleración continua del circuito. Tiene una muy ligera inclinación. Al final de la carrera, los autos de los tres primeros se estacionan en la recta y se monta el podio a un lado de la misma.";
     image.src = "images/interactive-map/straight.jpg";
-    video.src = "aaaaaa";
-    video_description.innerHTML = "aaaaaa"
+    video.src = "https://www.youtube.com/embed/1K3_or0nwJs?start=37";
+    video_description.innerHTML = "La salida del Gran Premio de Mónaco de 2005:"
 }
 
 function clickPits(){
