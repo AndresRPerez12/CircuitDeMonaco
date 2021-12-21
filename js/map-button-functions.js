@@ -205,7 +205,7 @@ function clickT15(){
     // Modificar el contenido usando las variables
     title.innerHTML = "Curvas 15 y 16: Salida del complejo de la piscina";
     text.innerHTML = "La chicana de las curvas 15 y 16 es mucho más cerrada que la anterior. Los pilotos suelen ir al límite en esta zona, pasando lo más cerca que pueden de las protecciones laterales para sacar provecho de toda el espacio posible y ganar tiempo. Es por esto que muchos accidentes suelen ocurrir en estas curvas.";
-    image.src = "images/interactive-map/turn-15.png";
+    image.src = "images/interactive-map/turn-15.PNG";
     video.src = "https://www.youtube.com/embed/ani7FaCFaUk";
     video_description.innerHTML = "Los piltos a veces pasan a milimetros de las protecciones, como se puede ver en este caso con Sergio Pérez y su Red Bull en 2021."
 }
