@@ -41,8 +41,8 @@ function clickT2(){
     title.innerHTML = "Curva 2: Beau Rivage";
     text.innerHTML = "Es una curva muy leve con pendiente hacia arriba que usualmente se toma a fondo. Beau Rivage significa \"hermosa orilla\", dada la vista increible en la cima de la colina. La salida de los pits desemboca a esta curva.";
     image.src = "images/interactive-map/turn-2.jpg";
-    video.src = "https://www.youtube.com/embed/tVivUWvhUZQ?start=159";
-    video_description.innerHTML = "En el ePrix de 2021, Mitch Evans tomó la punta de la carrera en esta curva."
+    video.src = "https://www.youtube.com/embed/QF8eQokVaVI";
+    video_description.innerHTML = "Es bastante complicado adelantar en esta parte de la pista, pero Kimi Räikkönen pudo pasar al Williams de Mark Webber en el gran premio de 2006."
 }
 
 function clickT3(){
@@ -56,8 +56,8 @@ function clickT3(){
     title.innerHTML = "Curva 3: Massenet";
     text.innerHTML = "Esta larga curva a la izquierda pasa frente a la casa de la ópera de Mónaco, la cual tiene un busto del compositor Jules Massenet en frente.";
     image.src = "images/interactive-map/turn-3.jpg";
-    video.src = "aaaaaa";
-    video_description.innerHTML = "aaaaaa"
+    video.src = "https://www.youtube.com/embed/FL5RiPGxgd0?start=297";
+    video_description.innerHTML = "El ex-piloto y campeón de 2016, Nico Rosberg, explica como tomar la curva en este video:"
 }
 
 function clickT4(){
@@ -71,8 +71,8 @@ function clickT4(){
     title.innerHTML = "Curva 4: Plaza del Casino";
     text.innerHTML = "Es una curva a la derecha de velocidad media. La curva pasa justo frente a la entrada del Casino de Monte Carlo, el edificio más famoso de la ciudad. En la actualidad, la plaza frente al casino tiene un pequeño jardín.";
     image.src = "images/interactive-map/turn-4.jpg";
-    video.src = "aaaaaa";
-    video_description.innerHTML = "aaaaaa"
+    video.src = "https://www.youtube.com/embed/FL5RiPGxgd0?start=318";
+    video_description.innerHTML = "El ex-piloto y campeón de 2016, Nico Rosberg, explica como tomar la curva en este video:"
 }
 
 function clickT5(){
@@ -116,8 +116,8 @@ function clickT7(){
     title.innerHTML = "Curva 7: Mirabeau Bas";
     text.innerHTML = "Curva a derecha que se toma de bajada. Nombrada de manera similar que la curva 5, es la curva baja proxima al Hotel Mirabeau. Es una curva a derecha que lleva hacia la bahía de Mónaco.";
     image.src = "images/interactive-map/turn-7.jpg";
-    video.src = "aaaaaa";
-    video_description.innerHTML = "aaaaaa"
+    video.src = "https://www.youtube.com/embed/FL5RiPGxgd0?start=332";
+    video_description.innerHTML = "El ex-piloto y campeón de 2016, Nico Rosberg, explica como tomar la curva en este video, desde la entrada a Mirabeau Haute hasta la salida de Mirabeau Bas:"
 }
 
 function clickT8(){
@@ -176,8 +176,8 @@ function clickT12(){
     title.innerHTML = "Curva 12: Tabac";
     text.innerHTML = "Es una fuerte curva a la izquierda que se toma con una velocidad considerable. Su nombre viene de una pequeña tienda de tabaco justo afuera de la curva. En la costa junto a la pista se pueden obsevar los yates que siempre están en el fin de semana de carrera.";
     image.src = "images/interactive-map/turn-12.jpg";
-    video.src = "aaaaaa";
-    video_description.innerHTML = "aaaaaa"
+    video.src = "https://www.youtube.com/embed/FL5RiPGxgd0?start=533";
+    video_description.innerHTML = "El ex-piloto y campeón de 2016, Nico Rosberg, explica como tomar la curva en este video:"
 }
 
 function clickT13(){
@@ -191,8 +191,8 @@ function clickT13(){
     title.innerHTML = "Curvas 13 y 14: Entrada al complejo de la piscina";
     text.innerHTML = "Antes de 1973, esta sección era una larga recta, pero tras la construcción de una piscina municipal, se agregaron dos chicanas para pasar alrededor. Las curvas 13 y 14 son la primera de estas chicanas, y se toman a velocidad considerable.";
     image.src = "images/interactive-map/turn-13.jpg";
-    video.src = "aaaaaa";
-    video_description.innerHTML = "aaaaaa"
+    video.src = "https://www.youtube.com/embed/FL5RiPGxgd0?start=543";
+    video_description.innerHTML = "El ex-piloto y campeón de 2016, Nico Rosberg, explica como tomar el complejo de la piscina en este video:"
 }
 
 function clickT15(){
@@ -207,7 +207,7 @@ function clickT15(){
     text.innerHTML = "La chicana de las curvas 15 y 16 es mucho más cerrada que la anterior. Los pilotos suelen ir al límite en esta zona, pasando lo más cerca que pueden de las protecciones laterales para sacar provecho de toda el espacio posible y ganar tiempo. Es por esto que muchos accidentes suelen ocurrir en estas curvas.";
     image.src = "images/interactive-map/turn-15.png";
     video.src = "https://www.youtube.com/embed/ani7FaCFaUk";
-    video_description.innerHTML = "Los piltos a veces pasan a milimetros de las protecciones, como se puede ver en este caso con Sergio Pérez y su Red Bull en 2021."
+    video_description.innerHTML = "Los pilotos a veces pasan a milimetros de las protecciones, como se puede ver en este caso con Sergio Pérez y su Red Bull en 2021."
 }
 
 function clickT17(){
