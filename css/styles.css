@@ -411,7 +411,7 @@ a:hover{
 .boton-mapa {   /* estilos generales los botones del mapa interactivo, generados en https://www.bestcssbuttongenerator.com/ */
 	background:linear-gradient(to bottom, #a50202 5%, #a83737 100%);
 	background-color:#a50202;
-	border-radius:31px;
+	border-radius:6px;
 	border:1px transparent;
 	display:inline-block;
 	cursor:pointer;
@@ -425,6 +425,20 @@ a:hover{
 	background:linear-gradient(to bottom, #a83737 5%, #a50202 100%);
 	background-color:#a83737;
 	color: #ffffff;
+	text-decoration: none;
+}
+
+.boton-mapa-activo {
+    background:linear-gradient(to bottom, #131212 5%, #333232 100%);
+	background-color:#131212;
+	border-radius:6px;
+	border:3px solid #131212;
+}
+
+.boton-mapa-activo:hover {
+    background:linear-gradient(to bottom, #333232 5%, #131212 100%);
+	background-color:#333232;
+    color: #ffffff;
 	text-decoration: none;
 }
 

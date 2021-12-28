@@ -1,6 +1,40 @@
 // Funciones llamadas por los botones del mapa interactivo
 
+function resetAllButtons(){
+    // función que le quita la clase de botón activo a todos los botones del mapa para que todos salgan iguales
+    const button_ids = [  "boton-restart", // lista con los id de todos los botones del mapa
+                    "boton-t1",
+                    "boton-t2",
+                    "boton-t3",
+                    "boton-t4",
+                    "boton-t5",
+                    "boton-t6",
+                    "boton-t7",
+                    "boton-t8",
+                    "boton-t9",
+                    "boton-t10",
+                    "boton-t12",
+                    "boton-t13",
+                    "boton-t15",
+                    "boton-t17",
+                    "boton-t18",
+                    "boton-straight",
+                    "boton-pits"
+                ];
+    // ciclo especial de JavaScript para iterar sobre un arreglo
+    button_ids.forEach(function (item, index) {
+        document.getElementById(item).classList.remove("boton-mapa-activo"); // le quita la clase "boton-mapa-activo" si la tiene 
+    });
+}
+
+function makeButtonActive( buttonId ){
+    // función que le añade la clase de botón activo a un botón específico del mapa para que sea visible cual es el botón activo actualmente
+    document.getElementById(buttonId).classList.add("boton-mapa-activo");  // le agrega la clase "boton-mapa-activo" 
+}
+
 function clickRestart(){
+    // reiniciar el color de todos los botones para que ninguno se vea como activo
+    resetAllButtons();
     // Encontrar los elementos a cambiar en el documento y almacenarlos en variables
     title = document.getElementById("map-section-title");
     text = document.getElementById("map-section-text");
@@ -16,6 +50,10 @@ function clickRestart(){
 }
 
 function clickT1(){
+    // reiniciar el color de todos los botones para que ninguno se vea como activo
+    resetAllButtons();
+    // marca el botón oprimido como el activo en este momento
+    makeButtonActive("boton-t1");
     // Encontrar los elementos a cambiar en el documento y almacenarlos en variables
     title = document.getElementById("map-section-title");
     text = document.getElementById("map-section-text");
@@ -31,6 +69,10 @@ function clickT1(){
 }
 
 function clickT2(){
+    // reiniciar el color de todos los botones para que ninguno se vea como activo
+    resetAllButtons();
+    // marca el botón oprimido como el activo en este momento
+    makeButtonActive("boton-t2");
     // Encontrar los elementos a cambiar en el documento y almacenarlos en variables
     title = document.getElementById("map-section-title");
     text = document.getElementById("map-section-text");
@@ -46,6 +88,10 @@ function clickT2(){
 }
 
 function clickT3(){
+    // reiniciar el color de todos los botones para que ninguno se vea como activo
+    resetAllButtons();
+    // marca el botón oprimido como el activo en este momento
+    makeButtonActive("boton-t3");
     // Encontrar los elementos a cambiar en el documento y almacenarlos en variables
     title = document.getElementById("map-section-title");
     text = document.getElementById("map-section-text");
@@ -61,6 +107,10 @@ function clickT3(){
 }
 
 function clickT4(){
+    // reiniciar el color de todos los botones para que ninguno se vea como activo
+    resetAllButtons();
+    // marca el botón oprimido como el activo en este momento
+    makeButtonActive("boton-t4");
     // Encontrar los elementos a cambiar en el documento y almacenarlos en variables
     title = document.getElementById("map-section-title");
     text = document.getElementById("map-section-text");
@@ -76,6 +126,10 @@ function clickT4(){
 }
 
 function clickT5(){
+    // reiniciar el color de todos los botones para que ninguno se vea como activo
+    resetAllButtons();
+    // marca el botón oprimido como el activo en este momento
+    makeButtonActive("boton-t5");
     // Encontrar los elementos a cambiar en el documento y almacenarlos en variables
     title = document.getElementById("map-section-title");
     text = document.getElementById("map-section-text");
@@ -91,6 +145,10 @@ function clickT5(){
 }
 
 function clickT6(){
+    // reiniciar el color de todos los botones para que ninguno se vea como activo
+    resetAllButtons();
+    // marca el botón oprimido como el activo en este momento
+    makeButtonActive("boton-t6");
     // Encontrar los elementos a cambiar en el documento y almacenarlos en variables
     title = document.getElementById("map-section-title");
     text = document.getElementById("map-section-text");
@@ -106,6 +164,10 @@ function clickT6(){
 }
 
 function clickT7(){
+    // reiniciar el color de todos los botones para que ninguno se vea como activo
+    resetAllButtons();
+    // marca el botón oprimido como el activo en este momento
+    makeButtonActive("boton-t7");
     // Encontrar los elementos a cambiar en el documento y almacenarlos en variables
     title = document.getElementById("map-section-title");
     text = document.getElementById("map-section-text");
@@ -121,6 +183,10 @@ function clickT7(){
 }
 
 function clickT8(){
+    // reiniciar el color de todos los botones para que ninguno se vea como activo
+    resetAllButtons();
+    // marca el botón oprimido como el activo en este momento
+    makeButtonActive("boton-t8");
     // Encontrar los elementos a cambiar en el documento y almacenarlos en variables
     title = document.getElementById("map-section-title");
     text = document.getElementById("map-section-text");
@@ -136,6 +202,10 @@ function clickT8(){
 }
 
 function clickT9(){
+    // reiniciar el color de todos los botones para que ninguno se vea como activo
+    resetAllButtons();
+    // marca el botón oprimido como el activo en este momento
+    makeButtonActive("boton-t9");
     // Encontrar los elementos a cambiar en el documento y almacenarlos en variables
     title = document.getElementById("map-section-title");
     text = document.getElementById("map-section-text");
@@ -151,6 +221,10 @@ function clickT9(){
 }
 
 function clickT10(){
+    // reiniciar el color de todos los botones para que ninguno se vea como activo
+    resetAllButtons();
+    // marca el botón oprimido como el activo en este momento
+    makeButtonActive("boton-t10");
     // Encontrar los elementos a cambiar en el documento y almacenarlos en variables
     title = document.getElementById("map-section-title");
     text = document.getElementById("map-section-text");
@@ -166,6 +240,10 @@ function clickT10(){
 }
 
 function clickT12(){
+    // reiniciar el color de todos los botones para que ninguno se vea como activo
+    resetAllButtons();
+    // marca el botón oprimido como el activo en este momento
+    makeButtonActive("boton-t12");
     // Encontrar los elementos a cambiar en el documento y almacenarlos en variables
     title = document.getElementById("map-section-title");
     text = document.getElementById("map-section-text");
@@ -181,6 +259,10 @@ function clickT12(){
 }
 
 function clickT13(){
+    // reiniciar el color de todos los botones para que ninguno se vea como activo
+    resetAllButtons();
+    // marca el botón oprimido como el activo en este momento
+    makeButtonActive("boton-t13");
     // Encontrar los elementos a cambiar en el documento y almacenarlos en variables
     title = document.getElementById("map-section-title");
     text = document.getElementById("map-section-text");
@@ -196,6 +278,10 @@ function clickT13(){
 }
 
 function clickT15(){
+    // reiniciar el color de todos los botones para que ninguno se vea como activo
+    resetAllButtons();
+    // marca el botón oprimido como el activo en este momento
+    makeButtonActive("boton-t15");
     // Encontrar los elementos a cambiar en el documento y almacenarlos en variables
     title = document.getElementById("map-section-title");
     text = document.getElementById("map-section-text");
@@ -211,6 +297,10 @@ function clickT15(){
 }
 
 function clickT17(){
+    // reiniciar el color de todos los botones para que ninguno se vea como activo
+    resetAllButtons();
+    // marca el botón oprimido como el activo en este momento
+    makeButtonActive("boton-t17");
     // Encontrar los elementos a cambiar en el documento y almacenarlos en variables
     title = document.getElementById("map-section-title");
     text = document.getElementById("map-section-text");
@@ -226,6 +316,10 @@ function clickT17(){
 }
 
 function clickT18(){
+    // reiniciar el color de todos los botones para que ninguno se vea como activo
+    resetAllButtons();
+    // marca el botón oprimido como el activo en este momento
+    makeButtonActive("boton-t18");
     // Encontrar los elementos a cambiar en el documento y almacenarlos en variables
     title = document.getElementById("map-section-title");
     text = document.getElementById("map-section-text");
@@ -241,6 +335,10 @@ function clickT18(){
 }
 
 function clickStraight(){
+    // reiniciar el color de todos los botones para que ninguno se vea como activo
+    resetAllButtons();
+    // marca el botón oprimido como el activo en este momento
+    makeButtonActive("boton-straight");
     // Encontrar los elementos a cambiar en el documento y almacenarlos en variables
     title = document.getElementById("map-section-title");
     text = document.getElementById("map-section-text");
@@ -256,6 +354,10 @@ function clickStraight(){
 }
 
 function clickPits(){
+    // reiniciar el color de todos los botones para que ninguno se vea como activo
+    resetAllButtons();
+    // marca el botón oprimido como el activo en este momento
+    makeButtonActive("boton-pits");
     // Encontrar los elementos a cambiar en el documento y almacenarlos en variables
     title = document.getElementById("map-section-title");
     text = document.getElementById("map-section-text");
