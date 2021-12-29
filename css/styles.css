@@ -599,6 +599,12 @@ a:hover{
 
 /******************************* CRÉDITOS **********************/
 
+.credits-text{ /* estilos para el texto general del body */
+    text-align: justify;
+    font-size: 6mm;
+    padding: 20px 0;
+}
+
 .credits-list{      /* estilos de la lista que contiene los créditos */ 
     text-align: left;
 }
