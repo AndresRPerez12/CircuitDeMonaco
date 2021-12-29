@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
     <link rel="stylesheet" href="css/styles.css"> <!-- especificar hoja de estilos propia al final para mayor jerarquía -->
+    <!-- incluir el script de JavaScript que define las funciones llamadas por lo botones del mapa interactivo -->
     <script src="js/map-button-functions.js"></script>
 </head>
 
@@ -62,7 +63,7 @@
         <div class="interactive_map">
             <!-- imagen desde un archivo, el fondo del mapa interactivo -->
             <img class="map-image" src="images/interactive-map/map_background.svg" alt="Mapa de fondo del circuito"> 
-            <!-- botones del mapa interactivo -->
+            <!-- botones del mapa interactivo con ids únicos y los llamados a funciones de JavaScript -->
             <a href="#map-section-title" target="_self" class="boton-mapa restart" id="boton-restart" onclick="clickRestart()">Reinciar</a>
             <a href="#map-section-title" target="_self" class="boton-mapa turn-1" id="boton-t1" onclick="clickT1()">C1</a>
             <a href="#map-section-title" target="_self" class="boton-mapa turn-2" id="boton-t2" onclick="clickT2()">C2</a>
@@ -88,23 +89,25 @@
                     <h2 class="subpage-subtitle" id="map-section-title">Uso del mapa interactivo</h2> <!-- subtítulo de la página específica -->
                 </div>
             </div>
-            <div class="row justify-content-center">
-                <div class="col-11 col-xl-5 align-self-center">
-                    <p class="table-text" id="map-section-text">
+            <div class="row justify-content-center"> <!-- fila de bootstrap que centra los elementos horizontalmente -->
+                <div class="col-11 col-xl-5 align-self-center"> <!-- columna de bootstrap que se hace más grande en celular y tablet -->
+                    <p class="table-text" id="map-section-text"> <!-- texto que cambia mediante funciones de JavaScript -->
                         Este es un mapa interactivo del circuito de Mónaco. Cada uno de los botones del mapa te mostrará mas información de esta sección de la pista, junto a una foto del lugar y un video de un acontecimiento que se ha dado en esa parte de la pista. ¡Toca cualquiera de los botones en el mapa para comenzar!
                     </p>
                 </div>
-                <div class="col-12 col-md-10 col-xl-7 align-self-center">
+                <div class="col-12 col-md-10 col-xl-7 align-self-center">  <!-- columna de bootstrap que se hace más grande en celular y tablet -->
+                    <!-- Imagen que cambia de src (fuente) mediante funciones de JavaScript -->
                     <img class="section-image" id="map-section-image" src="images/interactive-map/general.webp" alt="Imagen de la seccion"> <!-- imagen desde un archivo -->
                 </div>
             </div>
-            <div class="row justify-content-center">
-                <div class="col-11 col-xl-5 align-self-center">
-                    <p class="table-text" id="map-section-description">
+            <div class="row justify-content-center"> <!-- fila de bootstrap que centra los elementos horizontalmente -->
+                <div class="col-11 col-xl-5 align-self-center">  <!-- columna de bootstrap que se hace más grande en celular y tablet -->
+                    <p class="table-text" id="map-section-description">  <!-- texto que cambia mediante funciones de JavaScript -->
                         Descripción general del circuito:
                     </p>
                 </div>
-                <div class="col-12 col-md-10 col-xl-7">
+                <div class="col-12 col-md-10 col-xl-7">  <!-- columna de bootstrap que se hace más grande en celular y tablet -->
+                    <!-- Video de YouTube que cambia de src (fuente) mediante funciones de JavaScript -->
                     <iframe class="section-video" id="map-section-video"
                         src="https://www.youtube.com/embed/lOiOlXkPE5M?start=14" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
                     </iframe>
