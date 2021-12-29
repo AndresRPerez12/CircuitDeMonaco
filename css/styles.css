@@ -236,7 +236,7 @@ header label:hover {
         border-radius: 6px;
 		z-index: 30; /* para asegurar que el menu esta por encima de todo lo demás*/
         width: 200px; /* se refiere al ancho del fondo del menu y no a los botones */
-        margin-left: -90%; /* se oculta porque se coloca por fuera de la ventana*/
+        margin-left: -4000px; /* se oculta porque se coloca por fuera de la ventana*/
 		margin-top: 4px;
         transition: all 1s;   /* la animación de desplegar el menu dura 1 segundo*/
     } 
