@@ -15,10 +15,11 @@ html {  /* los links a la página actual tendran la animación de scroll */
 /******************************* CONTENEDORES **********************/
 
 .top_container{ /* estilos del contenedor superior que se mantiene en todas las páginas */ 
-    background-image: url(../images/tunnel.png);    /* fijar imagen de fondo desde un archivo */ 
+    background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0),rgba(0,0,0,0),#f2f4f6),
+                        url(../images/tunnel.png);/* fijar imagen de fondo desde un archivo con un gradiente */ 
     background-repeat:no-repeat;
     background-size:cover;
-    background-position: center 55%;    /* escoger que parte de la imagen se muestra */ 
+    background-position: center 65%;    /* escoger que parte de la imagen se muestra */ 
     position: relative;                 /* posición relativa a su posición estática usual */ 
     padding-top: 10px;
     padding-bottom: 200px;  
@@ -64,8 +65,8 @@ a.title-link:hover {    /* estilo cuando el cursor está sobre el link */
 .subtitle{  /* estilos del subtítulo principal */ 
     font-size: 10mm;
     font-weight: bold;
-    background-color: rgb(255, 255, 255, 0.6);  /* fijar el color de fondo del título incluyendo su opacidad */
-    color: #a50202;
+    background-color: rgb(242, 244, 246, 0.6);  /* fijar el color de fondo del título incluyendo su opacidad */
+    color: #131212;
     margin-top: 0;
     margin-bottom: 20px;
 }
@@ -97,8 +98,7 @@ a.boton-map-title:visited {  /* estilos para los botones cuando el link ya ha si
 }
 
 .boton-menu { /* estilos para los botones del menú, generados en https://www.bestcssbuttongenerator.com/ */
-	background:linear-gradient(to bottom, #ffffff 5%, #fcd6d6 100%);
-	background-color:#ffffff;
+	background-color:#f2f4f6;
 	border-radius:6px;
 	border:3px transparent;
 	display:inline-block;
@@ -122,7 +122,6 @@ a.boton-map-title:visited {  /* estilos para los botones cuando el link ya ha si
 }
 
 .boton-submenu { /* estilos para los botones del menú, generados en https://www.bestcssbuttongenerator.com/ */
-	background:linear-gradient(to bottom, #a50202 5%, #a83737 100%);
 	background-color:#a50202;
 	border-radius:6px;
 	border:3px transparent;
@@ -389,10 +388,23 @@ a:hover{
 }
 
 .map-container{    /* estilos para el fondo del mapa del sitio */
-    background-color: rgba(0, 0, 0, 0.5);
     padding-top: 10px;
     padding-bottom: 10px;
+    position: relative; /* para que su imagen de fondo con transparencia funciones correctamente */
 }
+
+.map-container::after {
+    content: "";
+    background: url(../images/site-map-background.jpg);
+    background-size:cover;
+    opacity: 0.6;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+  }
 
 /******************************* MAPA INTERACTIVO **********************/
 
